@@ -1,0 +1,1171 @@
+<head>
+    <style type="text/css">
+        .container {
+            display: flex;
+            overflow: auto;
+        }
+        
+        .left {
+            width: 300px;
+            overflow: auto;
+        }
+        
+        .left>div {
+            position: fixed;
+            height: 550px;
+            background-color: white;
+            width: 300px;
+            overflow: auto;
+        }
+        
+        .left ol li {
+            list-style: none;
+        }
+        
+        .right {
+            width: 70%;
+            overflow: auto;
+            margin-left: 30px;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        a:link {
+            color: black;
+        }
+        
+        a:visited {
+            color: black;
+        }
+        
+        a:hover {
+            color: red;
+        }
+        
+        a:active {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div id="asidedirectory" class="aside-box">
+                <div class="groupfile" id="directory">
+                    <h3 class="aside-title">目录</h3>
+                    <div class="align-items-stretch group_item">
+                        <div class="pos-box">
+                            <div class="scroll-box">
+                                <div class="toc-box">
+                                    <ol>
+                                        <li class="active"><a href="#t0">✍、目录脑图</a></li>
+                                        <li class=""><a href="#t1">本笔记结合《2023王道计算机网络考研复习指导》食用🔥</a></li>
+                                        <li class="sub-box">
+                                            <ol>
+                                                <li class=""><a href="#t2">计算机网络绪论与体系结构</a></li>
+                                            </ol>
+                                        </li>
+                                        <li class=""><a href="#t3">1.计网体系结构</a></li>
+                                        <li class="sub-box">
+                                            <ol>
+                                                <li class=""><a href="#t4">1.1、计算机网络</a></li>
+                                                <li class=""><a href="#t5">1.2、计算机网络的功能</a></li>
+                                                <li class=""><a href="#t6">1.3、计算机网络的发展</a></li>
+                                                <li class="sub-box">
+                                                    <ol>
+                                                        <li class=""><a href="#t7">1.3.1、第一阶段</a></li>
+                                                        <li class=""><a href="#t8">1.3.2、第二阶段</a></li>
+                                                        <li><a href="#t9">1.3.3、第三阶段</a></li>
+                                                        <li><a href="#t10">1.3.4、小结</a></li>
+                                                    </ol>
+                                                </li>
+                                                <li><a href="#t11">1.4、标准化工作</a></li>
+                                                <li class="sub-box">
+                                                    <ol>
+                                                        <li><a href="#t12">1.4.1、RFC</a></li>
+                                                        <li><a href="#t13">1.4.2、标准化工作的相关组织</a></li>
+                                                    </ol>
+                                                </li>
+                                                <li><a href="#t14">1.5、组成和分类</a></li>
+                                                <li class="sub-box">
+                                                    <ol>
+                                                        <li><a href="#t15">1.5.1、计网的组成</a></li>
+                                                        <li><a href="#t16">1.5.2、计网的分类</a></li>
+                                                        <li><a href="#t17">1.5.3、脑图时刻</a></li>
+                                                    </ol>
+                                                </li>
+                                                <li><a href="#t18">1.6、性能指标</a></li>
+                                                <li class="sub-box">
+                                                    <ol>
+                                                        <li><a href="#t19">1.6.1、速率</a></li>
+                                                        <li><a href="#t20">1.6.2、带宽</a></li>
+                                                        <li><a href="#t21">1.5.3、吞吐量</a></li>
+                                                        <li><a href="#t22">1.5.4、时延</a></li>
+                                                        <li><a href="#t23">1.5.5、时延带宽积</a></li>
+                                                        <li><a href="#t24">1.5.6、往返时延RTT</a></li>
+                                                        <li><a href="#t25">1.5.7、利用率</a></li>
+                                                        <li><a href="#t26">1.5.8、脑图时刻</a></li>
+                                                    </ol>
+                                                </li>
+                                                <li><a href="#t27">1.6、分层结构</a></li>
+                                                <li class="sub-box">
+                                                    <ol>
+                                                        <li><a href="#t28">1.6.1、正确认识分层结构</a></li>
+                                                        <li><a href="#t29">1.6.2、概念总结</a></li>
+                                                    </ol>
+                                                </li>
+                                                <li><a href="#t30">1.7、OSI参考模型</a></li>
+                                                <li class="sub-box">
+                                                    <ol>
+                                                        <li><a href="#t31">1.7.1、OSI参考模型解释通信过程</a></li>
+                                                        <li><a href="#t32">1.7.2、应用层</a></li>
+                                                        <li><a href="#t33">1.7.3、表示层</a></li>
+                                                        <li><a href="#t34">1.7.4、会话层</a></li>
+                                                        <li><a href="#t35">1.7.5、传输层</a></li>
+                                                        <li><a href="#t36">1.7.6、网络层</a></li>
+                                                        <li><a href="#t37">1.7.7、数据链路层</a></li>
+                                                        <li><a href="#t38">1.7.8、物理层</a></li>
+                                                    </ol>
+                                                </li>
+                                                <li><a href="#t39">1.8、TCP/IP参考模型</a></li>
+                                                <li class="sub-box">
+                                                    <ol>
+                                                        <li><a href="#t40">1.8.1、OSI与TCP/IP参考模型</a></li>
+                                                    </ol>
+                                                </li>
+                                                <li><a href="#t41">1.9、5层参考模型</a></li>
+                                                <li class="sub-box">
+                                                    <ol>
+                                                        <li><a href="#t42">1.9.1、5层参考模型的数据封装与解封装</a></li>
+                                                    </ol>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="blog-content-box">
+                <div class="article-header-box">
+                    <div class="article-header">
+                        <div class="article-title-box">
+                            <h1 class="title-article" id="articleContentId">【王道】计算机网络绪论与体系结构(零)</h1>
+                        </div>
+                        <div class="article-info-box">
+                            <div class="article-bar-top">
+                                <img class="article-type-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/original.png" alt="">
+                                <div class="bar-content">
+                                    <a class="follow-nickName " href="https://blog.csdn.net/Augenstern_QXL" target="_blank" rel="noopener" title="生命是有光的">生命是有光的</a>
+                                    <img class="article-time-img article-heard-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/newUpTime2.png" alt="">
+                                    <span class="time">已于&nbsp;2022-08-02 16:19:01&nbsp;修改</span>
+                                    <div class="read-count-box">
+                                        <img class="article-read-img article-heard-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/articleReadEyes2.png" alt="">
+                                        <span class="read-count">阅读量989</span>
+                                        <a id="blog_detail_zk_collection" class="un-collection" data-report-click="{&quot;mod&quot;:&quot;popu_823&quot;,&quot;spm&quot;:&quot;1001.2101.3001.4232&quot;,&quot;ab&quot;:&quot;new&quot;}">
+                                            <img class="article-collect-img article-heard-img un-collect-status isdefault" style="display:inline-block" src="https://csdnimg.cn/release/blogv2/dist/pc/img/tobarCollect2.png" alt="">
+                                            <img class="article-collect-img article-heard-img collect-status isactive" style="display:none" src="https://csdnimg.cn/release/blogv2/dist/pc/img/tobarCollectionActive2.png" alt="">
+                                            <span class="name">收藏</span>
+                                            <span class="get-collection" style="color: rgb(153, 154, 170);">
+                              10
+                          </span>
+                                        </a>
+                                        <div class="read-count-box is-like">
+                                            <img class="article-read-img article-heard-img" style="display:none" id="is-like-imgactive-new" src="https://csdnimg.cn/release/blogv2/dist/pc/img/newHeart2023Active.png" alt="">
+                                            <img class="article-read-img article-heard-img" style="display:block" id="is-like-img-new" src="https://csdnimg.cn/release/blogv2/dist/pc/img/newHeart2023Black.png" alt="">
+                                            <span class="read-count" id="blog-digg-num">点赞数
+                            4
+                        </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-tags-box">
+                                <div class="tags-box artic-tag-box">
+                                    <span class="label">分类专栏：</span>
+                                    <a class="tag-link" href="https://blog.csdn.net/augenstern_qxl/category_11620206.html" target="_blank" rel="noopener"># 计算机网络🔥</a>
+                                    <span class="label">文章标签：</span>
+                                    <a rel="nofollow" data-report-click="{&quot;mod&quot;:&quot;popu_626&quot;,&quot;spm&quot;:&quot;1001.2101.3001.4223&quot;,&quot;strategy&quot;:&quot;计算机网络&quot;,&quot;ab&quot;:&quot;new&quot;,&quot;extra&quot;:&quot;{\&quot;searchword\&quot;:\&quot;计算机网络\&quot;}&quot;}"
+                                        class="tag-link" href="https://so.csdn.net/so/search/s.do?q=%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C&amp;t=all&amp;o=vip&amp;s=&amp;l=&amp;f=&amp;viparticle=" target="_blank">计算机网络</a>
+                                </div>
+                            </div>
+                            <div class="up-time" style="left: 151.921px; display: none;"><span>于&nbsp;2022-02-23 19:47:29&nbsp;首次发布</span></div>
+                            <div class="slide-content-box">
+                                <div class="article-copyright">
+                                    <div class="creativecommons">
+                                        版权声明：本文为博主原创文章，遵循<a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener"> CC 4.0 BY-SA </a>版权协议，转载请附上原文出处链接和本声明。
+                                    </div>
+                                    <div class="article-source-link">
+                                        本文链接：<a href="https://blog.csdn.net/Augenstern_QXL/article/details/122757018" target="_blank">https://blog.csdn.net/Augenstern_QXL/article/details/122757018</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="operating">
+                                <a class="href-article-edit slide-toggle">版权</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="blogColumnPayAdvert">
+                    <div class="column-group">
+                        <div class="column-group-item column-group0 column-group-item-one">
+                            <div class="item-l">
+                                <a class="item-target" href="https://blog.csdn.net/augenstern_qxl/category_11620206.html" target="_blank" title="计算机网络🔥" data-report-click="{&quot;spm&quot;:&quot;1001.2101.3001.6332&quot;}">
+                                    <img class="item-target" src="https://img-blog.csdnimg.cn/c35a30d89a9a4716864894a5da044058.png?x-oss-process=image/resize,m_fixed,h_224,w_224" alt="">
+                                    <span class="title item-target">
+                                <span>
+                                <span class="tit">计算机网络🔥</span>
+                                    <span class="dec">专栏收录该内容</span>
+                                    </span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="item-m">
+                                <span>7 篇文章</span>
+                                <span>24 订阅</span>
+                            </div>
+                            <div class="item-r">
+                                <a class="item-target article-column-bt articleColumnFreeBt" data-id="11620206">订阅专栏</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <article class="baidu_pl">
+                    <div id="article_content" class="article_content clearfix">
+                        <link rel="stylesheet" href="https://csdnimg.cn/release/blogv2/dist/mdeditor/css/editerView/kdoc_html_views-1a98987dfd.css">
+                        <link rel="stylesheet" href="https://csdnimg.cn/release/blogv2/dist/mdeditor/css/editerView/ck_htmledit_views-044f2cf1dc.css">
+                        <div id="content_views" class="markdown_views prism-dracula">
+                            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                        <path stroke-linecap="round" d="M5,0 0,2.5 5,5z" id="raphael-marker-block" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                    </svg>
+                            <h2>
+                                <a name="t0"></a>
+                                <a id="_0"></a>✍、目录脑图</h2>
+                            <p><img src="https://img-blog.csdnimg.cn/fc1d509a813643189b8d1a08b085b88b.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA55Sf5ZG95piv5pyJ5YWJ55qE,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"></p>
+                            <blockquote>
+                                <h2>
+                                    <a name="t1"></a>
+                                    <a id="2023_3"></a>本笔记结合《2023<a href="https://so.csdn.net/so/search?q=%E7%8E%8B%E9%81%93&amp;spm=1001.2101.3001.7020" target="_blank" class="hl hl-1" data-report-click="{&quot;spm&quot;:&quot;1001.2101.3001.7020&quot;,&quot;dest&quot;:&quot;https://so.csdn.net/so/search?q=%E7%8E%8B%E9%81%93&amp;spm=1001.2101.3001.7020&quot;,&quot;extra&quot;:&quot;{\&quot;searchword\&quot;:\&quot;王道\&quot;}&quot;}"
+                                        data-tit="王道" data-pretit="王道">王道</a>计算机网络考研复习指导》食用🔥</h2>
+                                <p></p>
+                                <div class="toc">
+                                    <h4>
+                                        <a name="t2"></a><a href="https://so.csdn.net/so/search?q=%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C&amp;spm=1001.2101.3001.7020" target="" class="hl hl-1" data-report-click="{&quot;spm&quot;:&quot;1001.2101.3001.7020&quot;,&quot;dest&quot;:&quot;https://so.csdn.net/so/search?q=%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C&amp;spm=1001.2101.3001.7020&quot;,&quot;extra&quot;:&quot;{\&quot;searchword\&quot;:\&quot;计算机网络\&quot;}&quot;}"
+                                            data-tit="计算机网络" data-pretit="计算机网络">计算机网络</a>绪论与体系结构</h4>
+                                    <ul>
+                                        <li><a href="#_0" target="_self">✍、目录脑图</a></li>
+                                        <li><a href="#2023_3" target="_self">本笔记结合《2023王道计算机网络考研复习指导》食用🔥</a></li>
+                                        <li><a href="#1_12" target="_self">1.计网体系结构</a></li>
+                                        <li>
+                                            <ul>
+                                                <li><a href="#11_17" target="_self">1.1、计算机网络</a></li>
+                                                <li><a href="#12_25" target="_self">1.2、计算机网络的功能</a></li>
+                                                <li><a href="#13_34" target="_self">1.3、计算机网络的发展</a></li>
+                                                <li>
+                                                    <ul>
+                                                        <li><a href="#131_36" target="_self">1.3.1、第一阶段</a></li>
+                                                        <li><a href="#132_43" target="_self">1.3.2、第二阶段</a></li>
+                                                        <li><a href="#133_48" target="_self">1.3.3、第三阶段</a></li>
+                                                        <li><a href="#134_53" target="_self">1.3.4、小结</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#14_60" target="_self">1.4、标准化工作</a></li>
+                                                <li>
+                                                    <ul>
+                                                        <li><a href="#141RFC_69" target="_self">1.4.1、RFC</a></li>
+                                                        <li><a href="#142_84" target="_self">1.4.2、标准化工作的相关组织</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#15_96" target="_self">1.5、组成和分类</a></li>
+                                                <li>
+                                                    <ul>
+                                                        <li><a href="#151_98" target="_self">1.5.1、计网的组成</a></li>
+                                                        <li><a href="#152_104" target="_self">1.5.2、计网的分类</a></li>
+                                                        <li><a href="#153_117" target="_self">1.5.3、脑图时刻</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#16_128" target="_self">1.6、性能指标</a></li>
+                                                <li>
+                                                    <ul>
+                                                        <li><a href="#161_134" target="_self">1.6.1、速率</a></li>
+                                                        <li><a href="#162_156" target="_self">1.6.2、带宽</a></li>
+                                                        <li><a href="#153_179" target="_self">1.5.3、吞吐量</a></li>
+                                                        <li><a href="#154_193" target="_self">1.5.4、时延</a></li>
+                                                        <li><a href="#155_252" target="_self">1.5.5、时延带宽积</a></li>
+                                                        <li><a href="#156RTT_269" target="_self">1.5.6、往返时延RTT</a></li>
+                                                        <li><a href="#157_286" target="_self">1.5.7、利用率</a></li>
+                                                        <li><a href="#158_313" target="_self">1.5.8、脑图时刻</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#16_322" target="_self">1.6、分层结构</a></li>
+                                                <li>
+                                                    <ul>
+                                                        <li><a href="#161_346" target="_self">1.6.1、正确认识分层结构</a></li>
+                                                        <li><a href="#162_380" target="_self">1.6.2、概念总结</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#17OSI_392" target="_self">1.7、OSI参考模型</a></li>
+                                                <li>
+                                                    <ul>
+                                                        <li><a href="#171OSI_410" target="_self">1.7.1、OSI参考模型解释通信过程</a></li>
+                                                        <li><a href="#172_442" target="_self">1.7.2、应用层</a></li>
+                                                        <li><a href="#173_456" target="_self">1.7.3、表示层</a></li>
+                                                        <li><a href="#174_472" target="_self">1.7.4、会话层</a></li>
+                                                        <li><a href="#175_489" target="_self">1.7.5、传输层</a></li>
+                                                        <li><a href="#176_523" target="_self">1.7.6、网络层</a></li>
+                                                        <li><a href="#177_546" target="_self">1.7.7、数据链路层</a></li>
+                                                        <li><a href="#178_569" target="_self">1.7.8、物理层</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#18TCPIP_595" target="_self">1.8、TCP/IP参考模型</a></li>
+                                                <li>
+                                                    <ul>
+                                                        <li><a href="#181OSITCPIP_602" target="_self">1.8.1、OSI与TCP/IP参考模型</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#195_634" target="_self">1.9、5层参考模型</a></li>
+                                                <li>
+                                                    <ul>
+                                                        <li><a href="#1915_641" target="_self">1.9.1、5层参考模型的数据封装与解封装</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p></p>
+                            </blockquote>
+                            <h2>
+                                <a name="t3"></a>
+                                <a id="1_12"></a>1.计网体系结构</h2>
+                            <p><img src="https://img-blog.csdnimg.cn/9b5a019106b84727acbc9343e478d327.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA55Sf5ZG95piv5pyJ5YWJ55qE,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"></p>
+                            <h3>
+                                <a name="t4"></a>
+                                <a id="11_17"></a>1.1、计算机网络</h3>
+                            <ul>
+                                <li>
+                                    <p>计算机网络：是一个将分散的、具有独立功能的<mark>计算机系统</mark>，通过<mark>通信设备</mark>与<mark>线路</mark>连接起来，由功能完善的<mark>软件</mark>实现<strong>资源共享</strong>和<strong>信息传递</strong>的系统。</p>
+                                </li>
+                                <li>
+                                    <p>计算机网络是<mark>互联</mark>的、<mark>自治</mark>的计算机集合</p>
+                                    <ul>
+                                        <li>互联：通过通信链路互联互通</li>
+                                        <li>自治：无主从关系</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <h3>
+                                <a name="t5"></a>
+                                <a id="12_25"></a>1.2、计算机网络的功能</h3>
+                            <ol>
+                                <li>
+                                    <p>数据通信</p>
+                                </li>
+                                <li>
+                                    <p>资源共享：同一个计算机网络上的其他计算机可使用某台计算机的计算机资源的行为，可共享<mark>硬件、软件、数据。</mark></p>
+                                </li>
+                                <li>
+                                    <p>分布式处理：多台计算机各自承担同一工作任务的不同部分(Hadoop平台)</p>
+                                </li>
+                                <li>
+                                    <p>提高可靠性</p>
+                                </li>
+                                <li>
+                                    <p>负载均衡</p>
+                                </li>
+                            </ol>
+                            <h3>
+                                <a name="t6"></a>
+                                <a id="13_34"></a>1.3、计算机网络的发展</h3>
+                            <h4>
+                                <a name="t7"></a>
+                                <a id="131_36"></a>1.3.1、第一阶段</h4>
+                            <p><img src="https://img-blog.csdnimg.cn/bd69359b298549bb89bc0a39ed56331e.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA55Sf5ZG95piv5pyJ5YWJ55qE,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"></p>
+                            <p>网络把许多计算机连接在一起，而互联网则把许多网络连接在一起，因特网是世界上最大的互联网。</p>
+                            <h4>
+                                <a name="t8"></a>
+                                <a id="132_43"></a>1.3.2、第二阶段</h4>
+                            <p><img src="https://img-blog.csdnimg.cn/7a6f0f06bbab4cafbdc73e751e6ecebe.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA55Sf5ZG95piv5pyJ5YWJ55qE,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"></p>
+                            <h4>
+                                <a name="t9"></a>
+                                <a id="133_48"></a>1.3.3、第三阶段</h4>
+                            <p><img src="https://img-blog.csdnimg.cn/71fdbf8e76d6432ca3e3ff5f0d5810fa.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA55Sf5ZG95piv5pyJ5YWJ55qE,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"></p>
+                            <h4>
+                                <a name="t10"></a>
+                                <a id="134_53"></a>1.3.4、小结</h4>
+                            <p><img src="https://img-blog.csdnimg.cn/af2dabe3482e4b89a548b7f888decab7.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA55Sf5ZG95piv5pyJ5YWJ55qE,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"></p>
+                            <h3>
+                                <a name="t11"></a>
+                                <a id="14_60"></a>1.4、标准化工作</h3>
+                            <p>标准分为：</p>
+                            <ul>
+                                <li>法定标准：由权威机构指定的正式的、合法的标准 <mark>OSI</mark></li>
+                                <li>事实标准：某些公司的产品在这些竞争中占据了主流，时间长了，这些产品中的协议和技术就成了标准 <mark>TCP/IP</mark></li>
+                            </ul>
+                            <h4>
+                                <a name="t12"></a>
+                                <a id="141RFC_69"></a>1.4.1、RFC</h4>
+                            <p>RFC：Request For Comments ，因特网标准的形式</p>
+                            <p>RFC要上升为因特网正式标准的四个阶段：</p>
+                            <ul>
+                                <li>因特网草案(Internet Draft)：这个阶段还不是RFC文档</li>
+                                <li>建议标准(Proposed Standard)：从这个阶段开始称为RFC文档</li>
+                                <li>草案标准(Draft Standard)：2011年之后此标准就被取消了</li>
+                                <li>因特网标准(Internet Standard)</li>
+                            </ul>
+                            <h4>
+                                <a name="t13"></a>
+                                <a id="142_84"></a>1.4.2、标准化工作的相关组织</h4>
+                            <ul>
+                                <li>国际标准化组织ISO OSI模型、HDLC协议</li>
+                                <li>国际电信联盟ITU 制定通信规则</li>
+                                <li>电气和电子工程师协会IEEE 学术机构、IEEE802系列标准、5G</li>
+                                <li>Internet工程任务组IETF 负责因特网相关标准的制定</li>
+                            </ul>
+                            <p><img src="https://img-blog.csdnimg.cn/9348915cfc524c74bc9cc1d6b41fd65c.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA55Sf5ZG95piv5pyJ5YWJ55qE,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"></p>
+                            <h3>
+                                <a name="t14"></a>
+                                <a id="15_96"></a>1.5、组成和分类</h3>
+                            <h4>
+                                <a name="t15"></a>
+                                <a id="151_98"></a>1.5.1、计网的组成</h4>
+                            <h4>
+                                <a name="t16"></a>
+                                <a id="152_104"></a>1.5.2、计网的分类</h4>
+                            <p><img src="https://img-blog.csdnimg.cn/2fce0502cbbc4dfcbadd5b345d6978fb.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA55Sf5ZG95piv5pyJ5YWJ55qE,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"></p>
+                            <ol>
+                                <li>按分布范围分：广域网WAN、城域网MAN、局域网LAN、个人区域网PAN</li>
+                                <li>按使用者分：公用网、专用网</li>
+                                <li>按交换技术分：电路交换、报文交换、分组交换</li>
+                                <li>按拓扑结构分：总线型、星型、环型、网状型(常用于<strong>广域网</strong>)</li>
+                                <li>按传输技术分：广播式网络(共享公共通信信道)、点对点网络(使用<strong>分组存储转发</strong>和<strong>路由选择</strong>机制)</li>
+                            </ol>
+                            <h4>
+                                <a name="t17"></a>
+                                <a id="153_117"></a>1.5.3、脑图时刻</h4>
+                            <p><img src="https://img-blog.csdnimg.cn/4712e9be7e5e4841a0dd7b58752ea5ad.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA55Sf5ZG95piv5pyJ5YWJ55qE,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"></p>
+                            <h3>
+                                <a name="t18"></a>
+                                <a id="16_128"></a>1.6、性能指标</h3>
+                            <p>性能指标之速率、带宽、吞吐量、时延、时延带宽积、往返时间RTT、利用率</p>
+                            <h4>
+                                <a name="t19"></a>
+                                <a id="161_134"></a>1.6.1、速率</h4>
+                            <p>速率：速率即<mark>数据率</mark>或称<mark>数据传输率</mark>或<mark>比特率</mark></p>
+                            <ol>
+                                <li>
+                                    <p>什么是比特？</p>
+                                    <p>计算机当中发送的信号都是以数字形式发送的，比特就是计算机当中数据量的一个单位。就好像我们去游乐园排队的时候，我们是一个人一个人进游乐园，在计算机数据传输的过程中，也是一个比特一个比特的进入信道。<strong>数据传输的单位就是比特。比特就是数字1或者0，单位是位。</strong></p>
+                                </li>
+                            </ol>
+                            <p>连接在计算机网络上的<strong>主机</strong>在数字信道上传送数据<strong>位数的速率</strong>。单位是 b/s、kb/s、Mb/s、Gb/s、Tb/s。如下图，在1s内将10位数据发送完毕，说明其速率就是 10b/s。</p>
+                            <p><img src="https://img-blog.csdnimg.cn/7b4ae317f3ac4ef6a9de8761c926759c.png#pic_center" alt="在这里插入图片描述"></p>
+                            <div class="table-box">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>速率</th>
+                                            <th>存储容量 1Byte(字节)=8bit(比特)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>千 1kb/s=10<sup>3</sup>b/s</td>
+                                            <td>1KB=2<sup>10</sup>B=1024B=1024*8b</td>
+                                        </tr>
+                                        <tr>
+                                            <td>兆 1Mb/s=10<sup>3</sup>kb/s=10<sup>6</sup>b/s</td>
+                                            <td>1MB=2<sup>10</sup>KB=1024KB</td>
+                                        </tr>
+                                        <tr>
+                                            <td>吉 1GB=10<sup>3</sup>Mb/s=10<sup>6</sup>kb/s=10<sup>9</sup>b/s</td>
+                                            <td>1GB=2<sup>10</sup>MB=1024MB</td>
+                                        </tr>
+                                        <tr>
+                                            <td>太 1TB=10<sup>3</sup>GB=10<sup>6</sup>Mb/s=10<sup>9</sup>kb/s=10<sup>12</sup>b/s</td>
+                                            <td>1TB=2<sup>10</sup>GB=1024GB</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <h4>
+                                <a name="t20"></a>
+                                <a id="162_156"></a>1.6.2、带宽</h4>
+                            <ul>
+                                <li>"<mark>带宽</mark>"原本指某个信号具有的频带宽度，即最高频率与最低频率之差，单位是赫兹(Hz)</li>
+                                <li>计算机网络中，<mark>带宽</mark>用来表示网络的通信线路传送数据的能力，通常是指单位时间内从网络中的某一点到另一点所能通过的"<mark>最高数据率</mark>"。单位是"比特每秒"，b/s，kb/s，Mb/s，Gb/s。</li>
+                            </ul>
+                            <p>带宽可以理解为<strong>网络设备所支持的最高速度</strong>。</p>
+                            <p><img src="https://img-blog.csdnimg.cn/9c01c94b4f464ca3bdf01784c4d5914e.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA55Sf5ZG95piv5pyJ5YWJ55qE,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"></p>
+                            <p>链路带宽=1MB/S：1s可以向链路上发送1MB，也就是1us内可向链路发送1bit数据。</p>
+                            <p>经过1us之后，主机向链路发送1bit数据，再经过1us，第一个比特在链路上向前传播200m，第二个比特从主机发送到链路上，再经过1us，第一个比特继续向前传播200m，第二个比特向前传播200m，第三个比特从主机发送到链路上。</p>
+                            <hr>
+                            <p><img src="https://img-blog.csdnimg.cn/2101c42ed28448e3abfd7a6b6746d2c4.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA55Sf5ZG95piv5pyJ5YWJ55qE,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"></p>
+                            <blockquote>
+                                <p>链路带宽指的是在入口发送数据的速率，而不是在链路上传播的速率。链路上传播的速率是以电磁波的形式传播。</p>
+                            </blockquote>
+                            <h4>
+                                <a name="t21"></a>
+                                <a id="153_179"></a>1.5.3、吞吐量</h4>
+                            <p>表示在单位时间内通过某个网络(或信道、接口)的数据量。单位b/s，kb/s，Mb/s等</p>
+                            <p>吞吐量受网络的带宽或网络的额定速率的限制。</p>
+                            <p><img src="https://img-blog.csdnimg.cn/e85caafb63ba4edcb5bc4915c006865f.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA55Sf5ZG95piv5pyJ5YWJ55qE,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"></p>
+                            <p>链路带宽100MB/S,这是发送的速率，服务器1接收的速率为20MB/S，服务器2接收的速率为10MB/S。吞吐量是30MB/s。</p>
+                            <p>举个例子："我"是一个大胃王,我一秒能吃100桶方便面，白象厂家给了我20桶方便面，康师傅厂家给了我10桶方便面，那么我这一秒只能吃30桶了。因为只有30桶，我自身是可以吃100桶的。</p>
+                            <h4>
+                                <a name="t22"></a>
+                                <a id="154_193"></a>1.5.4、时延</h4>
+                            <p>时延指数据(报文/分组/比特流)从网络(或链路)的一端传送到另一端所需的时间。也叫<mark>延迟</mark>或<mark>迟延</mark>，单位是<mark>s</mark></p>
+                            <ul>
+                                <li>发送时延(传输时延)：从发送分组的第一个比特算起，到该分组的最后一个比特发送完毕所需的时间。
+                                    <ul>
+                                        <li><strong>发送时延 = 数据长度 / 信道带宽(发送速率)</strong></li>
+                                    </ul>
+                                </li>
+                                <li>传播时延：取决于电磁波传播速度和链路长度
+                                    <ul>
+                                        <li><strong>传播时延 = 信道长度 / 电磁波在信道上的传播速率</strong></li>
+                                    </ul>
+                                </li>
+                                <li>排队时延：等待输出 (入链路可用)</li>
+                                <li>处理时延：检错找出口</li>
+                            </ul>
+                            <p>例如A、B两个主机通信，通过链路进行连接，中间放置一个路由器。</p>
+                            <p><img src="https://img-blog.csdnimg.cn/fe7cfaeb1c284038bb343adeeb198b8c.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA55Sf5ZG95piv5pyJ5YWJ55qE,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"></p>
+                            <p><strong>发送时延</strong>：A主机有10位比特，A主机将所有数据从自身发送到链路信道上，直到最后一个比特到信道上为止，这样的一段时间就叫做发送时延。</p>
+                            <p>假如说A主机口的带宽是10b/s,也就是说A主机1s可以将10个比特发送到信道上，则发送时延如下：<br> <span class="katex--display"><span class="katex-display"><span class="katex"><span class="katex-mathml"> 
+      
+       
+        
+        
+          发送时延 
+         
+        
+          = 
+         
+         
+         
+           数据长度 
+          
+         
+           信道带宽 
+          
+         
+        
+          = 
+         
+         
+          
+          
+            10 
+           
+          
+            b 
+           
+          
+          
+          
+            10 
+           
+          
+            b 
+           
+          
+            / 
+           
+          
+            s 
+           
+          
+         
+        
+          = 
+         
+        
+          1 
+         
+        
+          s 
+         
+        
+       
+         发送时延 = \frac{数据长度}{信道带宽}=\frac{10b}{10b/s}=1s 
+        
+       
+     </span><span class="katex-html"><span class="base"><span class="strut" style="height: 0.6833em;"></span><span class="mord cjk_fallback">发送时延</span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace"
+                                    style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 2.0463em; vertical-align: -0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 1.3603em;"><span class="" style="top: -2.314em;"><span class="pstrut" style="height: 3em;"></span>
+                                <span
+                                    class="mord"><span class="mord cjk_fallback">信道带宽</span></span>
+                                    </span><span class="" style="top: -3.23em;"><span class="pstrut" style="height: 3em;"></span><span class="frac-line" style="border-bottom-width: 0.04em;"></span></span><span class="" style="top: -3.677em;"><span class="pstrut" style="height: 3em;"></span>
+                                    <span
+                                        class="mord"><span class="mord cjk_fallback">数据长度</span></span>
+                                        </span>
+                                        </span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.686em;"><span class=""></span></span>
+                                        </span>
+                                        </span>
+                                        </span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 2.3074em; vertical-align: -0.936em;"></span>
+                                        <span
+                                            class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 1.3714em;"><span class="" style="top: -2.314em;"><span class="pstrut" style="height: 3em;"></span>
+                                            <span
+                                                class="mord"><span class="mord">10</span><span class="mord mathnormal">b</span><span class="mord">/</span><span class="mord mathnormal">s</span></span>
+                                                </span><span class="" style="top: -3.23em;"><span class="pstrut" style="height: 3em;"></span><span class="frac-line" style="border-bottom-width: 0.04em;"></span></span><span class="" style="top: -3.677em;"><span class="pstrut" style="height: 3em;"></span>
+                                                <span
+                                                    class="mord"><span class="mord">10</span><span class="mord mathnormal">b</span></span>
+                                                    </span>
+                                                    </span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.936em;"><span class=""></span></span>
+                                                    </span>
+                                                    </span>
+                                                    </span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.2778em;"></span></span>
+                                                    <span
+                                                        class="base"><span class="strut" style="height: 0.6444em;"></span><span class="mord">1</span><span class="mord mathnormal">s</span></span>
+                                                        </span>
+                                                        </span>
+                                                        </span>
+                                                        </span>
+                            </p>
+                            <hr>
+                            <p><img src="https://img-blog.csdnimg.cn/a6b9c04783c948a58ecdfad1c1d54221.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA55Sf5ZG95piv5pyJ5YWJ55qE,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"></p>
+                            <p>传播时延：电磁波在信道上传播一定距离所花费的时间。取决于<strong>电磁波传播速度</strong>和<strong>链路长度</strong>。</p>
+                            <p>假设电磁波传播速度在这条线路上的速度是10m/s，先不考虑路由器，就只看A和B之间的通信，假如AB之间的距离是100m,则传播时延：<br> <span class="katex--display"><span class="katex-display"><span class="katex"><span class="katex-mathml"> 
+      
+       
+        
+        
+          传播时延 
+         
+        
+          = 
+         
+         
+         
+           信道长度 
+          
+         
+           电磁波在信道上的传播速率 
+          
+         
+        
+          = 
+         
+         
+          
+          
+            100 
+           
+          
+            m 
+           
+          
+          
+          
+            10 
+           
+          
+            m 
+           
+          
+            / 
+           
+          
+            s 
+           
+          
+         
+        
+          = 
+         
+        
+          10 
+         
+        
+          s 
+         
+        
+       
+         传播时延 = \frac{信道长度}{电磁波在信道上的传播速率} = \frac{100m}{10m/s}=10s 
+        
+       
+     </span><span class="katex-html"><span class="base"><span class="strut" style="height: 0.6833em;"></span><span class="mord cjk_fallback">传播时延</span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace"
+                                    style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 2.0463em; vertical-align: -0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 1.3603em;"><span class="" style="top: -2.314em;"><span class="pstrut" style="height: 3em;"></span>
+                                <span
+                                    class="mord"><span class="mord cjk_fallback">电磁波在信道上的传播速率</span></span>
+                                    </span><span class="" style="top: -3.23em;"><span class="pstrut" style="height: 3em;"></span><span class="frac-line" style="border-bottom-width: 0.04em;"></span></span><span class="" style="top: -3.677em;"><span class="pstrut" style="height: 3em;"></span>
+                                    <span
+                                        class="mord"><span class="mord cjk_fallback">信道长度</span></span>
+                                        </span>
+                                        </span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.686em;"><span class=""></span></span>
+                                        </span>
+                                        </span>
+                                        </span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 2.2574em; vertical-align: -0.936em;"></span>
+                                        <span
+                                            class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 1.3214em;"><span class="" style="top: -2.314em;"><span class="pstrut" style="height: 3em;"></span>
+                                            <span
+                                                class="mord"><span class="mord">10</span><span class="mord mathnormal">m</span><span class="mord">/</span><span class="mord mathnormal">s</span></span>
+                                                </span><span class="" style="top: -3.23em;"><span class="pstrut" style="height: 3em;"></span><span class="frac-line" style="border-bottom-width: 0.04em;"></span></span><span class="" style="top: -3.677em;"><span class="pstrut" style="height: 3em;"></span>
+                                                <span
+                                                    class="mord"><span class="mord">100</span><span class="mord mathnormal">m</span></span>
+                                                    </span>
+                                                    </span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.936em;"><span class=""></span></span>
+                                                    </span>
+                                                    </span>
+                                                    </span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.2778em;"></span></span>
+                                                    <span
+                                                        class="base"><span class="strut" style="height: 0.6444em;"></span><span class="mord">10</span><span class="mord mathnormal">s</span></span>
+                                                        </span>
+                                                        </span>
+                                                        </span>
+                                                        </span>
+                            </p>
+                            <hr>
+                            <p>如图,10个比特已经到路由器了,但是路由器比较忙,所以需要这10个比特等待，等待的时间就是<strong>排队时延</strong>。</p>
+                            <p>在10个比特上路由器之前，路由器还会对比特进行检查是否有错并看这10个比特要发送到哪里去，这一段时间就叫做<strong>处理时延</strong>。</p>
+                            <hr>
+                            <p><strong>高速链路</strong>：我们这里的信道带宽是10b/s，如果我们将带宽改为100b/s，那么我们的发送时延就会大大减少，所以高速链路指的是发送速率提高，而并不会影响到电磁波的传播速率。</p>
+                            <h4>
+                                <a name="t23"></a>
+                                <a id="155_252"></a>1.5.5、时延带宽积</h4>
+                            <p>时延带宽积(bit) = 传播时延(s) × 带宽(b/s)</p>
+                            <p>时延带宽积又称为<mark>以比特为单位的链路长度</mark>，即"某段链路现在有多少比特"[<strong>容量</strong>]</p>
+                            <p><img src="https://img-blog.csdnimg.cn/97366d1c72a54ea2b035d3a6910c4c29.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA55Sf5ZG95piv5pyJ5YWJ55qE,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"></p>
+                            <p>带宽指的是发送速率，就是A端一直发送速率，1个比特经过1个传播时延会从A走向B，当第一个比特碰到B为止，发送停止，<strong>此时时延带宽积就是链路里面所有的比特</strong>。</p>
+                            <h4>
+                                <a name="t24"></a>
+                                <a id="156RTT_269"></a>1.5.6、往返时延RTT</h4>
+                            <p>往返时延RTT：<strong>从发送方发送数据开始，到发送方收到接收方的确认(接收方收到数据后立即发送确认)，总共经历的时延</strong></p>
+                            <ul>
+                                <li>RTT越大，在收到确认之前，可以发送的数据越多</li>
+                                <li>RTT包括
+                                    <ul>
+                                        <li>往返传播时延 = 传播时延 * 2</li>
+                                        <li>末端处理时间</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <p>我们可以打开cmd窗口，使用 <code>ping www.baidu.com</code> 命令就可以测出往返时延。</p>
+                            <h4>
+                                <a name="t25"></a>
+                                <a id="157_286"></a>1.5.7、利用率</h4>
+                            <p>来个形象的例子：</p>
+                            <p><img src="https://img-blog.csdnimg.cn/974c99b1d4564f20bc0f34852c887f44.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA55Sf5ZG95piv5pyJ5YWJ55qE,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"></p>
+                            <p>如果主机A和主机B进行通信，它们之间的这条链路，如果链路上一直都有数据传输，那么利用率就高，如果偶尔有数据传输，那么利用率就低。</p>
+                            <p><strong>利用率分为</strong>：</p>
+                            <ul>
+                                <li>信道利用率🔥
+                                    <ul>
+                                        <li><strong>信道利用率 = 有数据通过的时间 / 总(有+无)数据通过的时间</strong></li>
+                                    </ul>
+                                </li>
+                                <li>网络利用率
+                                    <ul>
+                                        <li><strong>信道利用率加权平均值</strong></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <blockquote>
+                                <p>时延与利用率的关系</p>
+                            </blockquote>
+                            <p><img src="https://img-blog.csdnimg.cn/5507c1b5a30d4061ae64e1a0269494b5.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA55Sf5ZG95piv5pyJ5YWJ55qE,size_12,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"></p>
+                            <p>随着利用率趋近于1的时候，时延是急剧增大的。因为如果车道利用率很高，说明上面都是车，那么每辆车移动起来就会很缓慢，时延就会增大。</p>
+                            <h4>
+                                <a name="t26"></a>
+                                <a id="158_313"></a>1.5.8、脑图时刻</h4>
+                            <p><img src="https://img-blog.csdnimg.cn/f96cabd09163451984e985d2068374dc.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA55Sf5ZG95piv5pyJ5YWJ55qE,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"></p>
+                            <p>速率就是实际传输的速率，带宽主要指的是理想条件下能达到的最高的速率，吞吐量就是所有信道加一块1s内可以接收到多少比特。</p>
+                            <h3>
+                                <a name="t27"></a>
+                                <a id="16_322"></a>1.6、分层结构</h3>
+                            <p><img src="https://img-blog.csdnimg.cn/63b8dfdef3e54de2934b07e9cc0517d6.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA55Sf5ZG95piv5pyJ5YWJ55qE,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"></p>
+                            <p>发送文件前要完成的工作：</p>
+                            <ol>
+                                <li>发起通信的计算机必须将数据通信的通路进行<mark>激活</mark></li>
+                                <li>要告诉网络如何识别目的主机</li>
+                                <li>发起通信的计算机要查明目的主机是否开机，并且与网络连接正常</li>
+                                <li>发起通信的计算机要弄清楚，对方计算机中文件管理程序是否已经做好准备工作</li>
+                                <li>确保差错和意外可以解决</li>
+                            </ol>
+                            <p><strong>分层的基本原则</strong>：</p>
+                            <ol>
+                                <li>
+                                    <p>各层之间相互<mark>独立</mark>，每层只实现一种相对独立的功能。</p>
+                                </li>
+                                <li>
+                                    <p>每层之间<mark>界面自然清晰</mark>，易于理解，相互交流尽可能少</p>
+                                </li>
+                                <li>
+                                    <p>结构上可分隔开。每层都采用<mark>最合适的技术</mark>来实现。</p>
+                                </li>
+                                <li>
+                                    <p>保持<mark>下层</mark>对<mark>上层</mark>的独立性，<strong>上层单向使用下层提供的服务。</strong>(犹如下级给上级领导敬酒)</p>
+                                </li>
+                                <li>
+                                    <p>整个分层结构应该能促进标准化工作</p>
+                                </li>
+                            </ol>
+                            <h4>
+                                <a name="t28"></a>
+                                <a id="161_346"></a>1.6.1、正确认识分层结构</h4>
+                            <ol>
+                                <li>
+                                    <p><mark>实体</mark>：第n层中的活动元素称为<strong>n层实体</strong>。同一层的实体叫<strong>对等实体</strong>。</p>
+                                    <ul>
+                                        <li>例如主机A的第5层和主机B的第5层实体就叫对等实体</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p><mark>协议</mark>：为进行网络中的<strong>对等实体</strong>数据交换而建立的规则、标准或约定称为网络协议。协议是<strong>水平</strong>的，因为只能在<strong>对等实体</strong>之间进行。协议有三大要素：</p>
+                                    <ul>
+                                        <li>语法：规定传输数据的格式</li>
+                                        <li>语义：规定所要完成的功能</li>
+                                        <li>同步：规定各种操作的顺序</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p><mark>接口(访问服务点SAP)</mark>：上层使用下层服务的入口。</p>
+                                    <ul>
+                                        <li>每两个相邻层之间都会有接口，这个接口如同桥梁，使得下层可以为上层提供服务。</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p><mark>服务</mark>：下层为相邻上层提供的功能调用。<strong>服务是单向的，只有下层为上层提供服务，服务也是垂直的。</strong></p>
+                                    <ul>
+                                        <li>例如第4层使用第3层的服务，同时它为第5层提供服务。也就是说每一个中间层次都为上层提供服务，同时使用下层及下面所有层次服务的总和。</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                            <p><img src="https://img-blog.csdnimg.cn/03e66fd2b46b466bad121a7bf8c23912.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA55Sf5ZG95piv5pyJ5YWJ55qE,size_18,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"></p>
+                            <ol>
+                                <li>
+                                    <p>SDU服务数据单元：为完成用户所要求的功能而应传送的数据。</p>
+                                    <ul>
+                                        <li>也就是每一层要传输的数据，也就是有用的数据，就叫做SDU。</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p>PCI协议控制信息：控制协议操作的信息</p>
+                                </li>
+                                <li>
+                                    <p>PDU协议数据单元：对等层次之间传送的数据单位</p>
+                                    <ul>
+                                        <li>PCI + SDU = PDU，第4层的PDU作为下一层的SDU，又加上PCI，得到第3层的PDU。</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                            <h4>
+                                <a name="t29"></a>
+                                <a id="162_380"></a>1.6.2、概念总结</h4>
+                            <ul>
+                                <li>网络体系结构是从<strong>功能</strong>上描述计算机网络结构。</li>
+                                <li>计算机网络体系结构简称网络体系结构是<strong>分层结构</strong>。</li>
+                                <li>每层遵循某个/些<strong>网络协议</strong>以完成本层功能。</li>
+                                <li><strong>计算机网络体系结构</strong>是计算机网络的<strong>各层及其协议</strong>的集合。</li>
+                                <li>第n层在向n+1层提供服务时，此服务不仅包含第n层本身的功能，还包含由下层服务提供的功能。</li>
+                                <li>仅仅在<strong>相邻层间有接口</strong>，且所提供服务的具体实现细节对上一层完全屏蔽。</li>
+                                <li>体系结构是<strong>抽象</strong>的，而实现是指能运行的一些软件和硬件。</li>
+                            </ul>
+                            <h3>
+                                <a name="t30"></a>
+                                <a id="17OSI_392"></a>1.7、OSI参考模型</h3>
+                            <p><img src="https://img-blog.csdnimg.cn/4875c276916b4230b6a11ecebac77ec8.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA55Sf5ZG95piv5pyJ5YWJ55qE,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"></p>
+                            <p>国际标准化组织(ISO)于1984年提出开放系统互连(OSI)参考模型，但是理论成功，市场失败</p>
+                            <p><img src="https://img-blog.csdnimg.cn/4f361e4e9f484e6fb1e4a63e5bbcb90f.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA55Sf5ZG95piv5pyJ5YWJ55qE,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"></p>
+                            <p>将每一层的第一个字提取出来，由第一层到第7层，得到一个记忆口诀：<mark>物联网淑慧试用</mark></p>
+                            <p>7层模型上面3层负责数据处理，下面3层负责数据通信</p>
+                            <h4>
+                                <a name="t31"></a>
+                                <a id="171OSI_410"></a>1.7.1、OSI参考模型解释通信过程</h4>
+                            <p><img src="https://img-blog.csdnimg.cn/c2ef9c2db0284f13980900e4839aab96.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA55Sf5ZG95piv5pyJ5YWJ55qE,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"></p>
+                            <p>比如我们有两个主机A、B进行通信，中间有中间系统(路由器,网桥交换机等)。数据在主机要经过7层，在中间系统要经过下3层。所以上面4层我们称为端到端传输，下面3层我们称为点到点传输。</p>
+                            <p><img src="https://img-blog.csdnimg.cn/9306f28045984fcf8d91b4a29787f4f7.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA55Sf5ZG95piv5pyJ5YWJ55qE,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"></p>
+                            <p>物理层之间有传输介质，对等实体(层次)之间都会有协议。</p>
+                            <p>数据信息从A应用层传输到最下层物理层，在中间每一层都会对数据进行加工处理，之后物理层传输至中间系统物理层，中间系统将数据向上层传输对数据信息进行还原，还原之后继续向下层传输对数据进行加工，之后将数据传送至B物理层，B物理层向上层传输对数据信息进行还原，这样数据就由A传输到B了。</p>
+                            <hr>
+                            <p>我们来看一下每层对数据的加工：</p>
+                            <p><img src="https://img-blog.csdnimg.cn/8383b81d94f04952a0a08e5f161b7d26.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA55Sf5ZG95piv5pyJ5YWJ55qE,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"></p>
+                            <ol>
+                                <li>A应用层对数据加了首部PCI协议控制信息，因为 PCI + SDU = PDU，第7层的PDU作为下一层的SDU，又加上PCI，得到第6层的PDU</li>
+                                <li>数据链路层不仅加了首部，而且加了尾部。</li>
+                                <li>物理层不会进行处理，只是会形成比特流，将比特流放到传输介质上传输。</li>
+                                <li>然后比特流传输到B，由于A、B对等实体之间协议的存在，可以使得B每一层对数据进行去掉头部还原数据，最终可以得到原始的A传输的数据。</li>
+                            </ol>
+                            <h4>
+                                <a name="t32"></a>
+                                <a id="172_442"></a>1.7.2、应用层</h4>
+                            <p>应用层：所有能和用户交互产生网络流量的程序，用户与网络的界面。</p>
+                            <p>例如我们平常电脑连上网之后才能试用的软件，如果不连网也能使用的那就不叫作应用层。</p>
+                            <p>典型应用层服务：</p>
+                            <ul>
+                                <li>文件传输(FTP)</li>
+                                <li>电子邮件(SMTP)</li>
+                                <li>万维网(HTTP)</li>
+                            </ul>
+                            <h4>
+                                <a name="t33"></a>
+                                <a id="173_456"></a>1.7.3、表示层</h4>
+                            <p>表示层：用于处理在两个通信系统中交换信息的表示方式(语法和语义)</p>
+                            <p>功能：</p>
+                            <ol>
+                                <li>
+                                    <p>数据格式变换(翻译官)</p>
+                                    <p>由于不同系统的计算机的编码和表示方式不太一样，所以为了使不同的主机能够进行数据和信息的交换，就需要表示层实现数据格式变换的功能。</p>
+                                </li>
+                                <li>
+                                    <p>数据加密解密</p>
+                                </li>
+                                <li>
+                                    <p>数据压缩和恢复</p>
+                                </li>
+                            </ol>
+                            <h4>
+                                <a name="t34"></a>
+                                <a id="174_472"></a>1.7.4、会话层</h4>
+                            <p>会话层：向表示层实体/用户进程提供<strong>建立连接</strong>并在连接上<strong>有序</strong>地<strong>传输</strong>数据。这是会话，也是<strong>建立同步</strong>(SYN)</p>
+                            <p>例如我们在网页中打开百度和一个视频，这时网页就与百度窗口和视频窗口建立了会话，此时对视频进行快进不会影响百度窗口会话，因为会话之间是彼此独立的。</p>
+                            <p>会话层的功能：</p>
+                            <ol>
+                                <li>建立、管理、终止会话</li>
+                                <li>使用校验点可使会话在通信失效时从<code>校验点/同步点</code>继续恢复通信，实现数据同步。(适用于传输大文件)</li>
+                            </ol>
+                            <h4>
+                                <a name="t35"></a>
+                                <a id="175_489"></a>1.7.5、传输层</h4>
+                            <p>传输层：负责主机中两个进程的通信，即端到端的通信。传输单位是报文段或用户数据报。</p>
+                            <p>传输层功能：</p>
+                            <ol>
+                                <li><strong>可</strong>靠传输、不可靠传输</li>
+                                <li><strong>差</strong>错控制</li>
+                                <li><strong>流</strong>量控制</li>
+                                <li>复<strong>用</strong>分用</li>
+                            </ol>
+                            <p>记忆口诀：可查的也能留用？我们来看一下这几个功能的应用场景：</p>
+                            <p><img src="https://img-blog.csdnimg.cn/6ce77d837dbb44dbb11eca77c9744dbe.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA55Sf5ZG95piv5pyJ5YWJ55qE,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"></p>
+                            <ol>
+                                <li>
+                                    <p>例如我们两台电脑之间要传输文件，如果此文件比较大，那么文件会被分成好几个报文段，首先确认建立连接，然后发送报文段，只有另一台主机确认接收到第一个报文段，第二个报文段才能发送，这种确认机制就是<strong>可靠传输</strong>。<mark>可靠传输适用于大文件传输</mark>。</p>
+                                </li>
+                                <li>
+                                    <p>如果我们仅仅发送一个"在吗"给另一台电脑，那么我们不用确认是否建立连接，不用确认另一台电脑是否已经接收，这种就是<strong>不可靠传输</strong>。<mark>不可靠传输适用于小文件传输</mark></p>
+                                </li>
+                                <li>
+                                    <p><strong>差错控制</strong>就是对传输过程中的一些差错进行控制，例如报文段丢失、失序等，传输层就负责纠正这些错误。</p>
+                                </li>
+                                <li>
+                                    <p><strong>流量控制</strong>就是控制发送方的速度，因为有时候接收方来不及接收很多报文段，此时传输层就会控制使得发送方发的慢一点。</p>
+                                </li>
+                                <li>
+                                    <p>复用：多个应用层进程可同时使用下面运输层的服务</p>
+                                    <p>分用：运输层把收到的信息分别交付给上面应用层中相应的进程。</p>
+                                </li>
+                            </ol>
+                            <p><img src="https://img-blog.csdnimg.cn/30952bb144c2480bb73b36f3e4400305.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA55Sf5ZG95piv5pyJ5YWJ55qE,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"></p>
+                            <p>例如两个手机，都开了两个进程，分别是QQ、微信，每个进程都会被独立分配一个端口号，QQ的端口号是1，微信的端口号是2。此时QQ、微信都要发送信息给另一台手机，信息出了被分成报文段外，还会添加相应的端口号，这样到了另一台手机接收到报文段可以根据端口号来将信息发给不同的进程。这就是复用分用的体现。</p>
+                            <h4>
+                                <a name="t36"></a>
+                                <a id="176_523"></a>1.7.6、网络层</h4>
+                            <p>网络层：主要任务是把<strong>分组</strong>从源端传到目的端，为分组交换网上的不同主机提供通信服务。网络层传输单位是<strong>数据报</strong>。<strong>数据报</strong>过长的时候，就会将<strong>数据报</strong>切割分成<strong>分组</strong>。</p>
+                            <p><strong>网络层功能</strong>：</p>
+                            <ol>
+                                <li>路由选择</li>
+                                <li>流量控制</li>
+                                <li>差错控制</li>
+                                <li>拥塞控制</li>
+                            </ol>
+                            <p>我们来看一下这几个功能：</p>
+                            <p>[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-p5B41GU7-1643555942595)(王道计网(一)].assets/28.png)</p>
+                            <ol>
+                                <li>
+                                    <p>例如两台主机进行信息交互，中间要经过中间系统(路由器)，选择哪几个路由器来传输就是<strong>路由选择</strong></p>
+                                </li>
+                                <li>
+                                    <p>协调接收端和发送端的速度就是<strong>流量控制</strong></p>
+                                </li>
+                                <li>
+                                    <p>通信两结点之间约定一些特定的规则，接收方就会根据规则来检验接收到的数据是否有错，若有错就会修改</p>
+                                </li>
+                                <li>
+                                    <p>若所有结点都来不及接收分组，而要丢弃大量分组的话，网络就处于拥塞状态。因此要采取一定措施，缓解这种拥塞。</p>
+                                </li>
+                            </ol>
+                            <h4>
+                                <a name="t37"></a>
+                                <a id="177_546"></a>1.7.7、数据链路层</h4>
+                            <p>数据链路层：主要任务是把网络层传下来的数据报<strong>组装成帧</strong>。数据链路层/链路层的传输单位是<strong>帧</strong>。</p>
+                            <p>数据链路层功能：</p>
+                            <ol>
+                                <li>
+                                    <p>成帧(定义帧的开始和结束)</p>
+                                </li>
+                                <li>
+                                    <p>差错控制 <strong>帧错+位错</strong></p>
+                                </li>
+                                <li>
+                                    <p>流量控制</p>
+                                </li>
+                                <li>
+                                    <p>访问(接入)控制-<strong>控制对信道的访问</strong></p>
+                                </li>
+                            </ol>
+                            <p><img src="https://img-blog.csdnimg.cn/c4248b15bb2545288932571eb583a5d9.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA55Sf5ZG95piv5pyJ5YWJ55qE,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"></p>
+                            <p>例如在广播式网络当中，数据链路层就要处理访问控制问题，控制哪台主机现在可以占用信道，因为在广播式网络当中，同一时刻只能有一个主机在发送信息。</p>
+                            <h4>
+                                <a name="t38"></a>
+                                <a id="178_569"></a>1.7.8、物理层</h4>
+                            <p>物理层：主要任务是在<strong>物理媒体(同轴电缆、双绞线等)<strong>上实现比特流的</strong>透明传输</strong>。物理层的传输单位是<strong>比特</strong>。物理层主要就是把比特流转化为电信号，然后放到链路上进行传送。</p>
+                            <p>透明传输：不管所传数据是什么样的比特组合，都应当能在链路上传送。</p>
+                            <blockquote>
+                                <p>"透明"在计算机里面指的是看不见摸不着的，现实生活中指的是清晰明了</p>
+                            </blockquote>
+                            <p>物理层功能：</p>
+                            <ol>
+                                <li>
+                                    <p>定义接口特性</p>
+                                </li>
+                                <li>
+                                    <p>定义传输模式(单工、半双工、双工)</p>
+                                    <p>单工：同一时刻只能有一个人在发送或者接收</p>
+                                    <p>半双工：两个人都可以作为发送方和接收方，但是同一时刻还是只能有一个人发送信息(对讲机)</p>
+                                    <p>双工：两个人可以双向同时的接收和发送(打电话)</p>
+                                </li>
+                                <li>
+                                    <p>定义传输速率</p>
+                                </li>
+                                <li>
+                                    <p>比特同步(发送方发一个1，接收端就可以准确无误接收一个1)</p>
+                                </li>
+                                <li>
+                                    <p>比特编码</p>
+                                </li>
+                            </ol>
+                            <h3>
+                                <a name="t39"></a>
+                                <a id="18TCPIP_595"></a>1.8、TCP/IP参考模型</h3>
+                            <p><img src="https://img-blog.csdnimg.cn/ec8dad0256f54a1c9d3802dca7f4356a.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA55Sf5ZG95piv5pyJ5YWJ55qE,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"></p>
+                            <h4>
+                                <a name="t40"></a>
+                                <a id="181OSITCPIP_602"></a>1.8.1、OSI与TCP/IP参考模型</h4>
+                            <p>相同点：</p>
+                            <ol>
+                                <li>都分层</li>
+                                <li>基于独立的协议栈的概念</li>
+                                <li>可以实现异构网络互联(可以实现不同厂家生产的设备进行通信)</li>
+                            </ol>
+                            <p>不同点：</p>
+                            <ol>
+                                <li>OSI定义三点：服务、协议、接口</li>
+                                <li>OSI先出现，参考模型先于协议发明，但是不偏向特定协议。TCP/IP是先发明协议，再出现参考模型</li>
+                                <li>TCP/IP设计之初就考虑到异构网<strong>互联</strong>问题，将IP作为重要层次。</li>
+                                <li></li>
+                            </ol>
+                            <div class="table-box">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>ISO/OSI参考模型</th>
+                                            <th>TCP/IP模型</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>网络层</td>
+                                            <td>无连接+面向连接</td>
+                                            <td>无连接</td>
+                                        </tr>
+                                        <tr>
+                                            <td>传输层</td>
+                                            <td>面向连接</td>
+                                            <td>无连接+面向连接</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p>面向连接分为三个阶段：</p>
+                            <ol>
+                                <li>第一是建立连接，在此阶段，发出一个建立连接的请求。</li>
+                                <li>只有在连接成功建立之后，才能开始数据传输，这是第二阶段</li>
+                                <li>接着，当数据传输完毕，必须释放连接。</li>
+                            </ol>
+                            <p>而面向<strong>无连接</strong>没有这么多阶段，它直接进行数据传输。</p>
+                            <h3>
+                                <a name="t41"></a>
+                                <a id="195_634"></a>1.9、5层参考模型</h3>
+                            <p><img src="https://img-blog.csdnimg.cn/034a60e02bd1496ab5da33a2f7b765c5.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA55Sf5ZG95piv5pyJ5YWJ55qE,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"></p>
+                            <h4>
+                                <a name="t42"></a>
+                                <a id="1915_641"></a>1.9.1、5层参考模型的数据封装与解封装</h4>
+                            <p><img src="https://img-blog.csdnimg.cn/cc1ea4f40c07482cb254e009c78ce424.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA55Sf5ZG95piv5pyJ5YWJ55qE,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"></p>
+                            <ol>
+                                <li>
+                                    <p>首先对于数据，应用层会加一定的控制信息(头部)，这样就组成了<strong>报文</strong></p>
+                                </li>
+                                <li>
+                                    <p>接下来把这个<strong>报文</strong>切分成段，切分成段之后放到传输层上，传输层加上控制协议(头部)，这样就形成了<strong>报文段</strong>。</p>
+                                </li>
+                                <li>
+                                    <p>接下来将<strong>报文段</strong>放到网络层，网络层加上控制信息(头部)，这样就形成了<strong>数据报</strong>。</p>
+                                </li>
+                                <li>
+                                    <p>接下来将<strong>数据报</strong>放到数据链路层，加上头部和尾部，这样就形成了<strong>帧</strong></p>
+                                </li>
+                                <li>
+                                    <p>接下来将<strong>帧</strong>放到物理层，物理层将其转成比特流，传输单元就是<strong>比特</strong>，将比特流放在链路上进行传输。</p>
+                                </li>
+                                <li>
+                                    <p>之后传输到主机B进行解封装。</p>
+                                </li>
+                            </ol>
+                        </div>
+                        <div data-report-view="{&quot;mod&quot;:&quot;1585297308_001&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6548&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/Augenstern_QXL/article/details/122757018&quot;,&quot;extend1&quot;:&quot;pc&quot;,&quot;ab&quot;:&quot;new&quot;}">
+                            <div></div>
+                        </div>
+                        <link href="https://csdnimg.cn/release/blogv2/dist/mdeditor/css/editerView/markdown_views-98b95bb57c.css" rel="stylesheet">
+                        <link href="https://csdnimg.cn/release/blogv2/dist/mdeditor/css/style-c216769e99.css" rel="stylesheet">
+                    </div>
+                    <div id="treeSkill" data-report-view="{&quot;spm&quot;:&quot;1001.2101.3001.6866&quot;}" style="display: block;">
+                        <div class="skill-tree-box">
+                            <div class="skill-tree-head">文章知识点与官方知识档案匹配，可进一步学习相关知识</div>
+                            <div class="skill-tree-body">
+                                <div class="skill-tree-item"><span class="skill-tree-href"><a data-report-click="{&quot;spm&quot;:&quot;1001.2101.3001.6866&quot;,&quot;dest&quot;:&quot;https://edu.csdn.net/skill/network/network-16b1ac6767d947f4b9cf1be248239823?utm_source=csdn_ai_skill_tree_blog&quot;}" href="https://edu.csdn.net/skill/network/network-16b1ac6767d947f4b9cf1be248239823?utm_source=csdn_ai_skill_tree_blog" target="_blank">网络技能树</a><i></i><a data-report-click="{&quot;spm&quot;:&quot;1001.2101.3001.6866&quot;,&quot;dest&quot;:&quot;https://edu.csdn.net/skill/network/network-16b1ac6767d947f4b9cf1be248239823?utm_source=csdn_ai_skill_tree_blog&quot;}" href="https://edu.csdn.net/skill/network/network-16b1ac6767d947f4b9cf1be248239823?utm_source=csdn_ai_skill_tree_blog" target="_blank">认识身边的计算机网络</a><i></i><a data-report-click="{&quot;spm&quot;:&quot;1001.2101.3001.6866&quot;,&quot;dest&quot;:&quot;https://edu.csdn.net/skill/network/network-16b1ac6767d947f4b9cf1be248239823?utm_source=csdn_ai_skill_tree_blog&quot;}" href="https://edu.csdn.net/skill/network/network-16b1ac6767d947f4b9cf1be248239823?utm_source=csdn_ai_skill_tree_blog" target="_blank">常见的网络设备</a></span>
+                                    <span
+                                        class="skill-tree-con"><span class="skill-tree-count">40596</span> 人正在系统学习中</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <script>
+                    $(function() {
+                        setTimeout(function() {
+                            var mathcodeList = document.querySelectorAll('.htmledit_views img.mathcode');
+                            if (mathcodeList.length > 0) {
+                                for (let i = 0; i < mathcodeList.length; i++) {
+                                    if (mathcodeList[i].naturalWidth === 0 || mathcodeList[i].naturalHeight === 0) {
+                                        var alt = mathcodeList[i].alt;
+                                        alt = '\\(' + alt + '\\)';
+                                        var curSpan = $('<span class="img-codecogs"></span>');
+                                        curSpan.text(alt);
+                                        $(mathcodeList[i]).before(curSpan);
+                                        $(mathcodeList[i]).remove();
+                                    }
+                                }
+                                MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+                            }
+                        }, 1000)
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+    <script>
+    </script>
+</body>
+
+</html>

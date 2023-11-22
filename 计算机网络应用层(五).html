@@ -1,0 +1,691 @@
+<html>
+
+<head>
+    <style type="text/css">
+        .container {
+            display: flex;
+            overflow: auto;
+        }
+        
+        .left {
+            width: 300px;
+            overflow: auto;
+        }
+        
+        .left>div {
+            position: fixed;
+            height: 550px;
+            background-color: white;
+            width: 300px;
+            overflow: auto;
+        }
+        
+        .left ol li {
+            list-style: none;
+        }
+        
+        .right {
+            width: 70%;
+            overflow: auto;
+            margin-left: 30px;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        a:link {
+            color: black;
+        }
+        
+        a:visited {
+            color: black;
+        }
+        
+        a:hover {
+            color: red;
+        }
+        
+        a:active {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div id="asidedirectory" class="aside-box">
+                <div class="groupfile" id="directory">
+                    <h3 class="aside-title">目录</h3>
+                    <div class="align-items-stretch group_item">
+                        <div class="pos-box">
+                            <div class="scroll-box">
+                                <div class="toc-box">
+                                    <ol>
+                                        <li class="active"><a href="#t0">王道考研计算机网络应用层</a></li>
+                                        <li><a href="#t1">1、应用层</a></li>
+                                        <li class="sub-box">
+                                            <ol>
+                                                <li><a href="#t2">1.1、网络应用模型</a></li>
+                                                <li class="sub-box">
+                                                    <ol>
+                                                        <li><a href="#t3">1.1.1、应用层概述</a></li>
+                                                        <li><a href="#t4">1.1.2、客户/服务器模型(C/S模型)</a></li>
+                                                        <li><a href="#t5">1.1.3、P2P模型</a></li>
+                                                    </ol>
+                                                </li>
+                                                <li><a href="#t6">1.2、域名解析系统DNS</a></li>
+                                                <li class="sub-box">
+                                                    <ol>
+                                                        <li><a href="#t7">1.2.1、DNS系统</a></li>
+                                                        <li><a href="#t8">1.2.2、域名</a></li>
+                                                        <li><a href="#t9">1.2.3、域名服务器</a></li>
+                                                        <li><a href="#t10">1.2.4、域名解析过程</a></li>
+                                                    </ol>
+                                                </li>
+                                                <li><a href="#t11">1.3、文件传输协议FTP</a></li>
+                                                <li class="sub-box">
+                                                    <ol>
+                                                        <li><a href="#t12">1.3.1、FTP服务器和用户端</a></li>
+                                                        <li><a href="#t13">1.3.2、FTP工作原理</a></li>
+                                                    </ol>
+                                                </li>
+                                                <li><a href="#t14">1.4、电子邮件</a></li>
+                                                <li class="sub-box">
+                                                    <ol>
+                                                        <li><a href="#t15">1.4.1、电子邮件的信息格式</a></li>
+                                                        <li><a href="#t16">1.4.2、电子邮件系统概述</a></li>
+                                                    </ol>
+                                                </li>
+                                                <li><a href="#t17">1.5、电子邮件协议🔥</a></li>
+                                                <li class="sub-box">
+                                                    <ol>
+                                                        <li><a href="#t18">1.5.1、简单邮件传送协议SMTP</a></li>
+                                                        <li><a href="#t19">1.5.2、MIME</a></li>
+                                                        <li><a href="#t20">1.5.3、邮局协议POP3</a></li>
+                                                        <li><a href="#t21">1.5.4、网际报文存取协议IMAP</a></li>
+                                                        <li><a href="#t22">1.5.5、基于万维网的电子邮件</a></li>
+                                                    </ol>
+                                                </li>
+                                                <li><a href="#t23">1.6、万维网和HTTP协议</a></li>
+                                                <li class="sub-box">
+                                                    <ol>
+                                                        <li><a href="#t24">1.6.1、超文本传输协议HTTP</a></li>
+                                                        <li><a href="#t25">1.6.2、HTTP协议的特点</a></li>
+                                                        <li><a href="#t26">1.6.3、HTTP协议的连接方式</a></li>
+                                                        <li><a href="#t27">1.6.4、HTTP的报文结构</a></li>
+                                                    </ol>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="blog-content-box">
+                <div class="article-header-box">
+                    <div class="article-header">
+                        <div class="article-title-box">
+                            <h1 class="title-article" id="articleContentId">【王道】计算机网络应用层(五)</h1>
+                        </div>
+                        <div class="article-info-box">
+                            <div class="article-bar-top">
+                                <img class="article-type-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/original.png" alt="">
+                                <div class="bar-content">
+                                    <a class="follow-nickName " href="https://blog.csdn.net/Augenstern_QXL" target="_blank" rel="noopener" title="生命是有光的">生命是有光的</a>
+                                    <img class="article-time-img article-heard-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/newCurrentTime2.png" alt="">
+                                    <span class="time">于&nbsp;2022-08-28 08:44:40&nbsp;发布</span>
+                                    <div class="read-count-box">
+                                        <img class="article-read-img article-heard-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/articleReadEyes2.png" alt="">
+                                        <span class="read-count">阅读量497</span>
+                                        <a id="blog_detail_zk_collection" class="un-collection" data-report-click="{&quot;mod&quot;:&quot;popu_823&quot;,&quot;spm&quot;:&quot;1001.2101.3001.4232&quot;,&quot;ab&quot;:&quot;new&quot;}">
+                                            <img class="article-collect-img article-heard-img un-collect-status isdefault" style="display:inline-block" src="https://csdnimg.cn/release/blogv2/dist/pc/img/tobarCollect2.png" alt="">
+                                            <img class="article-collect-img article-heard-img collect-status isactive" style="display:none" src="https://csdnimg.cn/release/blogv2/dist/pc/img/tobarCollectionActive2.png" alt="">
+                                            <span class="name">收藏</span>
+                                            <span class="get-collection" style="color: rgb(153, 154, 170);">
+                              4
+                          </span>
+                                        </a>
+                                        <div class="read-count-box is-like">
+                                            <img class="article-read-img article-heard-img" style="display:none" id="is-like-imgactive-new" src="https://csdnimg.cn/release/blogv2/dist/pc/img/newHeart2023Active.png" alt="">
+                                            <img class="article-read-img article-heard-img" style="display:block" id="is-like-img-new" src="https://csdnimg.cn/release/blogv2/dist/pc/img/newHeart2023Black.png" alt="">
+                                            <span class="read-count" id="blog-digg-num">点赞数
+                            1
+                        </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-tags-box">
+                                <div class="tags-box artic-tag-box">
+                                    <span class="label">分类专栏：</span>
+                                    <a class="tag-link" href="https://blog.csdn.net/augenstern_qxl/category_11620206.html" target="_blank" rel="noopener"># 计算机网络🔥</a>
+                                    <span class="label">文章标签：</span>
+                                    <a rel="nofollow" data-report-click="{&quot;mod&quot;:&quot;popu_626&quot;,&quot;spm&quot;:&quot;1001.2101.3001.4223&quot;,&quot;strategy&quot;:&quot;服务器&quot;,&quot;ab&quot;:&quot;new&quot;,&quot;extra&quot;:&quot;{\&quot;searchword\&quot;:\&quot;服务器\&quot;}&quot;}"
+                                        class="tag-link" href="https://so.csdn.net/so/search/s.do?q=%E6%9C%8D%E5%8A%A1%E5%99%A8&amp;t=all&amp;o=vip&amp;s=&amp;l=&amp;f=&amp;viparticle=" target="_blank">服务器</a>
+                                    <a rel="nofollow" data-report-click="{&quot;mod&quot;:&quot;popu_626&quot;,&quot;spm&quot;:&quot;1001.2101.3001.4223&quot;,&quot;strategy&quot;:&quot;p2p&quot;,&quot;ab&quot;:&quot;new&quot;,&quot;extra&quot;:&quot;{\&quot;searchword\&quot;:\&quot;p2p\&quot;}&quot;}"
+                                        class="tag-link" href="https://so.csdn.net/so/search/s.do?q=p2p&amp;t=all&amp;o=vip&amp;s=&amp;l=&amp;f=&amp;viparticle=" target="_blank">p2p</a>
+                                    <a rel="nofollow" data-report-click="{&quot;mod&quot;:&quot;popu_626&quot;,&quot;spm&quot;:&quot;1001.2101.3001.4223&quot;,&quot;strategy&quot;:&quot;网络&quot;,&quot;ab&quot;:&quot;new&quot;,&quot;extra&quot;:&quot;{\&quot;searchword\&quot;:\&quot;网络\&quot;}&quot;}"
+                                        class="tag-link" href="https://so.csdn.net/so/search/s.do?q=%E7%BD%91%E7%BB%9C&amp;t=all&amp;o=vip&amp;s=&amp;l=&amp;f=&amp;viparticle=" target="_blank">网络</a>
+                                </div>
+                            </div>
+                            <div class="slide-content-box">
+                                <div class="article-copyright">
+                                    <div class="creativecommons">
+                                        版权声明：本文为博主原创文章，遵循<a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener"> CC 4.0 BY-SA </a>版权协议，转载请附上原文出处链接和本声明。
+                                    </div>
+                                    <div class="article-source-link">
+                                        本文链接：<a href="https://blog.csdn.net/Augenstern_QXL/article/details/126216485" target="_blank">https://blog.csdn.net/Augenstern_QXL/article/details/126216485</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="operating">
+                                <a class="href-article-edit slide-toggle">版权</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="blogColumnPayAdvert">
+                    <div class="column-group">
+                        <div class="column-group-item column-group0 column-group-item-one">
+                            <div class="item-l">
+                                <a class="item-target" href="https://blog.csdn.net/augenstern_qxl/category_11620206.html" target="_blank" title="计算机网络🔥" data-report-click="{&quot;spm&quot;:&quot;1001.2101.3001.6332&quot;}">
+                                    <img class="item-target" src="https://img-blog.csdnimg.cn/c35a30d89a9a4716864894a5da044058.png?x-oss-process=image/resize,m_fixed,h_224,w_224" alt="">
+                                    <span class="title item-target">
+                                <span>
+                                <span class="tit">计算机网络🔥</span>
+                                    <span class="dec">专栏收录该内容</span>
+                                    </span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="item-m">
+                                <span>7 篇文章</span>
+                                <span>24 订阅</span>
+                            </div>
+                            <div class="item-r">
+                                <a class="item-target article-column-bt articleColumnFreeBt" data-id="11620206">订阅专栏</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <article class="baidu_pl">
+                    <div id="article_content" class="article_content clearfix">
+                        <link rel="stylesheet" href="https://csdnimg.cn/release/blogv2/dist/mdeditor/css/editerView/kdoc_html_views-1a98987dfd.css">
+                        <link rel="stylesheet" href="https://csdnimg.cn/release/blogv2/dist/mdeditor/css/editerView/ck_htmledit_views-044f2cf1dc.css">
+                        <div id="content_views" class="markdown_views prism-dracula">
+                            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                        <path stroke-linecap="round" d="M5,0 0,2.5 5,5z" id="raphael-marker-block" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                    </svg>
+                            <blockquote>
+                                <p></p>
+                                <div class="toc">
+                                    <h4>
+                                        <a name="t0"></a><a href="https://so.csdn.net/so/search?q=%E7%8E%8B%E9%81%93&amp;spm=1001.2101.3001.7020" target="" class="hl hl-1" data-report-click="{&quot;spm&quot;:&quot;1001.2101.3001.7020&quot;,&quot;dest&quot;:&quot;https://so.csdn.net/so/search?q=%E7%8E%8B%E9%81%93&amp;spm=1001.2101.3001.7020&quot;,&quot;extra&quot;:&quot;{\&quot;searchword\&quot;:\&quot;王道\&quot;}&quot;}"
+                                            data-tit="王道" data-pretit="王道">王道</a>考研计算机网络应用层</h4>
+                                    <ul>
+                                        <li><a href="#1_7" target="_self">1、应用层</a></li>
+                                        <li>
+                                            <ul>
+                                                <li><a href="#11_14" target="_self">1.1、网络应用模型</a></li>
+                                                <li>
+                                                    <ul>
+                                                        <li><a href="#111_18" target="_self">1.1.1、应用层概述</a></li>
+                                                        <li><a href="#112CS_34" target="_self">1.1.2、客户/服务器模型(C/S模型)</a></li>
+                                                        <li><a href="#113P2P_42" target="_self">1.1.3、P2P模型</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#12DNS_53" target="_self">1.2、域名解析系统DNS</a></li>
+                                                <li>
+                                                    <ul>
+                                                        <li><a href="#121DNS_55" target="_self">1.2.1、DNS系统</a></li>
+                                                        <li><a href="#122_75" target="_self">1.2.2、域名</a></li>
+                                                        <li><a href="#123_92" target="_self">1.2.3、域名服务器</a></li>
+                                                        <li><a href="#124_103" target="_self">1.2.4、域名解析过程</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#13FTP_121" target="_self">1.3、文件传输协议FTP</a></li>
+                                                <li>
+                                                    <ul>
+                                                        <li><a href="#131FTP_127" target="_self">1.3.1、FTP服务器和用户端</a></li>
+                                                        <li><a href="#132FTP_138" target="_self">1.3.2、FTP工作原理</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#14_176" target="_self">1.4、电子邮件</a></li>
+                                                <li>
+                                                    <ul>
+                                                        <li><a href="#141_178" target="_self">1.4.1、电子邮件的信息格式</a></li>
+                                                        <li><a href="#142_185" target="_self">1.4.2、电子邮件系统概述</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#15_208" target="_self">1.5、电子邮件协议🔥</a></li>
+                                                <li>
+                                                    <ul>
+                                                        <li><a href="#151SMTP_210" target="_self">1.5.1、简单邮件传送协议SMTP</a></li>
+                                                        <li><a href="#152MIME_240" target="_self">1.5.2、MIME</a></li>
+                                                        <li><a href="#153POP3_253" target="_self">1.5.3、邮局协议POP3</a></li>
+                                                        <li><a href="#154IMAP_269" target="_self">1.5.4、网际报文存取协议IMAP</a></li>
+                                                        <li><a href="#155_277" target="_self">1.5.5、基于万维网的电子邮件</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#16HTTP_286" target="_self">1.6、万维网和HTTP协议</a></li>
+                                                <li>
+                                                    <ul>
+                                                        <li><a href="#161HTTP_304" target="_self">1.6.1、超文本传输协议HTTP</a></li>
+                                                        <li><a href="#162HTTP_326" target="_self">1.6.2、HTTP协议的特点</a></li>
+                                                        <li><a href="#163HTTP_341" target="_self">1.6.3、HTTP协议的连接方式</a></li>
+                                                        <li><a href="#164HTTP_356" target="_self">1.6.4、HTTP的报文结构</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p></p>
+                            </blockquote>
+                            <h2>
+                                <a name="t1"></a>
+                                <a id="1_7"></a>1、应用层</h2>
+                            <p><img src="https://img-blog.csdnimg.cn/3068ef51fdef4bf58b4596ccd4b22184.png#pic_center" alt="在这里插入图片描述"></p>
+                            <blockquote>
+                                <p>本章参考《2023王道·<a href="https://so.csdn.net/so/search?q=%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C&amp;spm=1001.2101.3001.7020" target="_blank" class="hl hl-1" data-report-view="{&quot;spm&quot;:&quot;1001.2101.3001.7020&quot;,&quot;dest&quot;:&quot;https://so.csdn.net/so/search?q=%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C&amp;spm=1001.2101.3001.7020&quot;,&quot;extra&quot;:&quot;{\&quot;searchword\&quot;:\&quot;计算机网络\&quot;}&quot;}"
+                                        data-report-click="{&quot;spm&quot;:&quot;1001.2101.3001.7020&quot;,&quot;dest&quot;:&quot;https://so.csdn.net/so/search?q=%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C&amp;spm=1001.2101.3001.7020&quot;,&quot;extra&quot;:&quot;{\&quot;searchword\&quot;:\&quot;计算机网络\&quot;}&quot;}"
+                                        data-tit="计算机网络" data-pretit="计算机网络">计算机网络</a>考研复习指导》，二者结合，这一章看了笔记直接看书，可以不看视频</p>
+                            </blockquote>
+                            <h3>
+                                <a name="t2"></a>
+                                <a id="11_14"></a>1.1、网络应用模型</h3>
+                            <p>网络应用模型包括客户/服务器模型(CS)，P2P模型(Peer-to-peer)</p>
+                            <h4>
+                                <a name="t3"></a>
+                                <a id="111_18"></a>1.1.1、应用层概述</h4>
+                            <p><img src="https://img-blog.csdnimg.cn/e4665570987447b790710813b4bd86d5.png#pic_center" alt="在这里插入图片描述"></p>
+                            <div class="table-box">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>应用层的功能</th>
+                                            <th>应用层的重要协议</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>文件传输、访问和管理</td>
+                                            <td>FTP</td>
+                                        </tr>
+                                        <tr>
+                                            <td>电子邮件</td>
+                                            <td>SMTP、POP3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>虚拟终端</td>
+                                            <td>HTTP</td>
+                                        </tr>
+                                        <tr>
+                                            <td>查询服务和远程作业登录</td>
+                                            <td>DNS</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <h4>
+                                <a name="t4"></a>
+                                <a id="112CS_34"></a>1.1.2、客户/服务器模型(C/S模型)</h4>
+                            <p><img src="https://img-blog.csdnimg.cn/646d2bd481c84e9890f0abe07c589af2.png#pic_center" alt="在这里插入图片描述"></p>
+                            <p>服务器可以理解为另一台永久开机的电脑。服务器一般比较贵…</p>
+                            <h4>
+                                <a name="t5"></a>
+                                <a id="113P2P_42"></a>1.1.3、P2P模型</h4>
+                            <p><img src="https://img-blog.csdnimg.cn/98f8e2ea2a034e04aac70cfcac592b4e.png#pic_center" alt="在这里插入图片描述"></p>
+                            <h3>
+                                <a name="t6"></a>
+                                <a id="12DNS_53"></a>1.2、域名解析系统DNS</h3>
+                            <h4>
+                                <a name="t7"></a>
+                                <a id="121DNS_55"></a>1.2.1、DNS系统</h4>
+                            <p><img src="https://img-blog.csdnimg.cn/e4ad77fd370f4db28970c2f098b1811a.png#pic_center" alt="在这里插入图片描述"></p>
+                            <p>扩展阿里四面：请你谈谈网站是如何进行访问的？</p>
+                            <ol>
+                                <li>输入一个域名；回车</li>
+                                <li>检查本机的 C:\Windows\System32\drivers\etc\hosts配置文件下有没有这个域名映射；
+                                    <ul>
+                                        <li>有：直接返回对应的ip地址，这个地址中，有我们需要访问的web程序，可以直接访问</li>
+                                        <li>没有：去DNS服务器找，找到的话就返回，找不到就返回找不到</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                            <p>DNS：全世界的域名都在这里管理</p>
+                            <h4>
+                                <a name="t8"></a>
+                                <a id="122_75"></a>1.2.2、域名</h4>
+                            <p>域名自左向右：由低到高，其实域名的完整写法在最后有一个点，即：<code>www.cskaoyan.com.</code>，这个点就是<strong>根</strong></p>
+                            <p><img src="https://img-blog.csdnimg.cn/68feb1a66c404f9c996d0fe6e15c7ff8.png#pic_center" alt="在这里插入图片描述"></p>
+                            <p>根左边就是顶级域名：</p>
+                            <ul>
+                                <li>国家顶级域名：<code>.cn</code>表示中国，<code>.us</code>表示美国，<code>.uk</code>表示英国</li>
+                                <li>通用顶级域名：<code>.com</code>表示公司，<code>.net</code>表示网络服务机构，<code>.org</code>表示非营利性组织，(<code>.com</code>比较贵，我上当了😓…)</li>
+                                <li>基础结构域名/反向域名：<code>.arpa</code> ，用于反向域名解析：即IP地址解析为域名</li>
+                            </ul>
+                            <h4>
+                                <a name="t9"></a>
+                                <a id="123_92"></a>1.2.3、域名服务器</h4>
+                            <p><img src="https://img-blog.csdnimg.cn/e8ff1409c46346c78265193c4b0f37c3.png#pic_center" alt="在这里插入图片描述"></p>
+                            <blockquote>
+                                <p>只要找到<code>com</code>域名服务器，就可以找到 <code>xxxx.com</code>的IP地址</p>
+                            </blockquote>
+                            <h4>
+                                <a name="t10"></a>
+                                <a id="124_103"></a>1.2.4、域名解析过程</h4>
+                            <p>域名解析有两种方法：递归查询和迭代查询，两种方法最开始都是要由主机查询本地域名服务器，这样的查询都是使用递归查询</p>
+                            <ul>
+                                <li>递归查询(靠别人)：<strong>主机先寻本地域名服务器</strong>，若没有，<strong>本地域名服务器</strong>再寻根域名服务器，若没有，<strong>根域名服务器</strong>再寻<strong>顶级域名服务器</strong>，若没有，<strong>顶级域名服务器</strong>再寻<strong>权限域名服务器</strong>的帮助</li>
+                                <li>迭代查询(靠自己)：<strong>主机先寻本地域名服务器</strong>，若没有，<strong>本地域名服务器</strong>再寻根域名服务器，若没有，<strong>本地域名服务器</strong>再寻<strong>顶级域名服务器</strong>，若没有，<strong>本地域名服务器</strong>再寻<strong>权限域名服务器</strong>的帮助</li>
+                            </ul>
+                            <p><img src="https://img-blog.csdnimg.cn/b6959b2ebf7249da98bb38676e316b60.png#pic_center" alt="在这里插入图片描述"></p>
+                            <p>我们普遍使用<strong>高速缓存</strong>，高速缓存可以用来存放最近查过的域名以及从哪里获得这个域名映射信息的记录。因为主机名和IP地址之间的映射不是永久的，所以DNS服务器将在一段时间后丢弃高速缓存中的信息(平常去访问Github速度慢甚至进不去，网上有一种方法修改DNS)</p>
+                            <p><strong>DNS优化</strong></p>
+                            <ul>
+                                <li>DNS缓存（一般浏览器会在第一次解析后，默认建立缓存，时间很短，只有一分钟左右）</li>
+                                <li>减少DNS解析次数（一个网站中我们需要发送请求的域名和服务器尽可能少即可）</li>
+                                <li>DNS预获取(dns-prefetch)：在页面加载开始的时候，就把当前页面中需要访问其他域名(服务器)的信息进行提前DNS解析，以后加载到具体内容部分可以不用解析了</li>
+                            </ul>
+                            <h3>
+                                <a name="t11"></a>
+                                <a id="13FTP_121"></a>1.3、文件传输协议FTP</h3>
+                            <p>文件传输协议FTP：上传文件到服务器和从服务器下载文件</p>
+                            <h4>
+                                <a name="t12"></a>
+                                <a id="131FTP_127"></a>1.3.1、FTP服务器和用户端</h4>
+                            <p>FTP是基于客户/服务器(C/S)的协议。</p>
+                            <p>用户通过一个客户机程序连接至在远程计算机上运行的服务器程序。</p>
+                            <ul>
+                                <li>按照FTP协议提供服务，进行文件传送的计算机就是<strong>FTP服务器</strong>。</li>
+                                <li>连接FTP服务器，遵循FTP协议与服务器传送文件的电脑就是<strong>FTP客户端</strong>。</li>
+                            </ul>
+                            <h4>
+                                <a name="t13"></a>
+                                <a id="132FTP_138"></a>1.3.2、FTP工作原理</h4>
+                            <ol>
+                                <li>登录（既可以使用用户名和密码登录，也可以匿名登录）
+                                    <ul>
+                                        <li>FTP使用TCP实现可靠传输。</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                            <p><img src="https://img-blog.csdnimg.cn/1f8ba38efab643e59638e7a7bc40f66f.png#pic_center" alt="在这里插入图片描述"></p>
+                            <p>左边是主机，右边是FTP服务器， FTP服务器由一个主进程和n个从属进程组成，主进程负责接收新的请求，从属进程负责处理单个请求。 工作步骤如下：</p>
+                            <ol>
+                                <li>打开21控制端口，使客户进程能够连接</li>
+                                <li>等待客户进程发连接请求</li>
+                                <li>启动从属进程来处理客户进程发来的请求，主进程与从属进程并发执行，从属进程对客户进程的请求处理完毕后即终止</li>
+                                <li>回到等待状态，继续接收其他客户进程的请求</li>
+                            </ol>
+                            <blockquote>
+                                <p>理发店的迎宾就是主进程，里面的托尼老师就是从属进程</p>
+                            </blockquote>
+                            <p><img src="https://img-blog.csdnimg.cn/5017c944cdae496ca4e1216750cbef77.png#pic_center" alt="在这里插入图片描述"></p>
+                            <p>从属进程：控制进程和数据传送进程</p>
+                            <ul>
+                                <li>控制连接端口21，控制连接用来传输控制信息(如：连接请求、传送请求)，FTP客户发出的传送请求，通过控制连接发送给服务器端的控制进程，但控制连接并不用来传送文件。在传输文件时还可以使用控制连接(如客户在传输途中发送一个中止传输的命令)，因此控制连接在整个会话期间<strong>一直保持打开状态。</strong></li>
+                                <li>服务器端的控制进程在接收到FTP客户发来的文件传输请求后，就创建"数据传送进程"和"数据连接"。数据连接用来连接客户端和服务器端的数据传送进程，数据传送进程实际完成文件的传送，在传送完毕后关闭"数据传送连接"并结束允许。</li>
+                            </ul>
+                            <p>数据连接有两种传输模式：</p>
+                            <ul>
+                                <li>主动模式PORT：客户端连接到服务器的21端口，登录成功后要读取数据时，客户端随机开放一个端口，并发送命令告知服务器，服务器收到PORT命令和端口号后，通过20端口和客户端开放的端口连接，发送数据</li>
+                                <li>被动模式PASV：客户端要读取数据时，发送PASV命令道服务器，服务器在本地随机开放一个端口并告知客户端，客户端再连接道服务器开放的端口进行数据传输。</li>
+                                <li>无论是主动还是被动模式，选择权在"客户端"，简单概括：主动模式传送数据是"服务器"连接到"客户端"的端口，被动模式传送数据是"客户端"连接到"服务器"的端口。</li>
+                            </ul>
+                            <blockquote>
+                                <p>数据连接端口不一定永远是20，主动模式使用TCP20端口，被动模式由服务器和客户端自行协商决定，通常端口号&gt;1024</p>
+                            </blockquote>
+                            <p>FTP传输模式：</p>
+                            <ul>
+                                <li>文本模式：ASCII模式，以文本序列传输数据</li>
+                                <li>二进制模式：Binary模式，以二进制序列传输数据</li>
+                            </ul>
+                            <h3>
+                                <a name="t14"></a>
+                                <a id="14_176"></a>1.4、电子邮件</h3>
+                            <h4>
+                                <a name="t15"></a>
+                                <a id="141_178"></a>1.4.1、电子邮件的信息格式</h4>
+                            <p><img src="https://img-blog.csdnimg.cn/c9ffdd7a55654a4c90dff099a0cbe1ab.png#pic_center" alt="在这里插入图片描述"></p>
+                            <h4>
+                                <a name="t16"></a>
+                                <a id="142_185"></a>1.4.2、电子邮件系统概述</h4>
+                            <p><img src="https://img-blog.csdnimg.cn/a0f9c497d6c9496fa1cf6bda69a9c518.png#pic_center" alt="在这里插入图片描述"></p>
+                            <p>一个电子邮件系统应该具有三个最主要的组成结构：用户代理邮件，邮件服务器和电子邮件使用的协议(如SMTP、POP3等)。发件人有一个用户代理收件人也有一个用户代理，还有发送方邮件服务器和接收方邮件服务器。</p>
+                            <p><img src="https://img-blog.csdnimg.cn/9960a7ff0e7a462cb11e71c1f0153e5f.png#pic_center" alt="在这里插入图片描述"></p>
+                            <p>电子邮件的收发过程：</p>
+                            <ol>
+                                <li>发信人调用用户代理，来撰写和编辑要发送的邮件，用户代理用SMTP把邮件传送给发送端邮件服务器</li>
+                                <li>发送端邮件服务器将邮件放入邮件，缓存队列中等待发送</li>
+                                <li>运行在发送端邮件服务器的SMTP客户进程，发现邮件缓存中有待发送的邮件，就像运行在接收端邮件服务器的SMTP服务器进程发起TCP连接</li>
+                                <li>TCP连接建立后，SMTP客户进程开始向远程SMTP服务器进程发送邮件，当所有邮件发完后，SMTP就关闭所建立的TCP连接</li>
+                                <li>运行在接收端邮件服务器中的SMTP服务器进程收到邮件后，将邮件放入收信人的用户邮箱，等待收信人在方便时进行读取</li>
+                                <li>收信人打算收信时调用用户进程使用POP3协议，将自己的邮件从接收端邮件服务器的用户邮箱中取回</li>
+                            </ol>
+                            <h3>
+                                <a name="t17"></a>
+                                <a id="15_208"></a>1.5、电子邮件协议🔥</h3>
+                            <h4>
+                                <a name="t18"></a>
+                                <a id="151SMTP_210"></a>1.5.1、简单邮件传送协议SMTP</h4>
+                            <p>SMTP规定了在两个相互通信的<strong>SMTP进程</strong>之间应如何交换信息。负责发送邮件的SMTP进程就是<strong>SMTP客户</strong>，负责接收邮件的进程就是SMTP服务器。</p>
+                            <p>SMTP规定了14条命令(几个字母)和21种应答信息(三位数字代码+简单文字说明)</p>
+                            <ul>
+                                <li>SMTP协议是建立在TCP连接之上的，它所使用的端口号是25，使用的是C/S方式</li>
+                                <li>SMTP通信的三个阶段：连接建立、邮件传送、连接释放</li>
+                            </ul>
+                            <p><img src="https://img-blog.csdnimg.cn/7b60aceff40742b3b584a8d73ecd8065.png#pic_center" alt="在这里插入图片描述"></p>
+                            <ol>
+                                <li>
+                                    <p>连接建立</p>
+                                    <ul>
+                                        <li>发件人的邮件发送到发送方邮件服务器的邮件缓存后，SMTP客户就每隔一定时间对邮件缓存扫描一次。如发现有邮件就使用SMTP熟知的端口号25与接收方的邮件服务器的SMTP服务器建立TCP连接。连接建立后接收方SMTP服务器发出220 Service ready(服务就绪)，然后SMTP客户向SMTP服务器发送HELLO命令，附上发送方的主机名。</li>
+                                        <li>SMTP不使用中间的邮件服务器， TCP连接总是在发送方和接收方这两个邮件服务器之间直接建立，而不管他们相隔多远，不管在传送过程中要经过多少个路由器，当接收方邮件服务器因故障暂时不能建立连接时，发送方的邮件服务器只能等待一段时间后再次尝试连接</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p>邮件传送</p>
+                                    <ul>
+                                        <li>连接建立后，就可以开始传送邮件。邮件的传送从MAIL命令开始，MAIL命令后面有发件人的地址，如 <code>MAIL FROM：&lt;www.qindalin.com</code>&gt;</li>
+                                        <li>若SMTP服务器已准备好接收邮件，则回答250OK.</li>
+                                        <li>接着SMTP客户端发送一个或多个 RCPT （收件人recipient的缩写）命令，格式为 <code>RCPT TO: &lt;收件人地址&gt;</code></li>
+                                        <li>每发送一个RCPT命令，都应该有相应的信息从SMTP服务器返回，如 <code>250 OK</code> 或者<code>550 No such user her(无此用户)</code></li>
+                                        <li>RCPT命令的作用是：先弄清接收方系统是否已经做好接收邮件的准备，然后才发送邮件，以便不至于发送了很长的邮件后才知道地址错误，进而避免浪费通信资源</li>
+                                        <li>获得OK的回答后，客户端就使用DATA命令，表示要开始传输邮件的内容。</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p>连接释放</p>
+                                    <ul>
+                                        <li>邮件发送完毕后，SMTP客户应发送QUIT命令。</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                            <blockquote>
+                                <p>考试不需要掌握细节，但是复试可能有些老师会问…</p>
+                            </blockquote>
+                            <h4>
+                                <a name="t19"></a>
+                                <a id="152MIME_240"></a>1.5.2、MIME</h4>
+                            <p>SMTP的缺点：</p>
+                            <ol>
+                                <li>SMTP不能传送可执行文件或者其他二进制对象</li>
+                                <li>SMTP仅限于传送七位ASCIII码，不能传送其他非英语国家的文字</li>
+                                <li>SMTP服务器会拒绝超过一定长度的邮件</li>
+                            </ol>
+                            <p><img src="https://img-blog.csdnimg.cn/78d4a72dfba64457aa2df30af0d58790.png#pic_center" alt="在这里插入图片描述"></p>
+                            <p>所以提出了<strong>多用途网络邮件扩充MIME</strong>，MIME未改动SMTP或取代它， MIME的意图是继续使用目前的格式，但增加了邮件主体的结构。其实就是将其他国家的文字转化成了7位的ASCII码，再通过SMTP的协议进行邮件的传送。</p>
+                            <h4>
+                                <a name="t20"></a>
+                                <a id="153POP3_253"></a>1.5.3、邮局协议POP3</h4>
+                            <p><img src="https://img-blog.csdnimg.cn/36d4485c54ae49b69174f9b58db3c9cc.png#pic_center" alt="在这里插入图片描述"></p>
+                            <p>POP3协议是在最后一步采用"拉"的通信方式，当用户读取邮件时，用户代理向邮件服务器发出请求，"拉"取用户邮箱中的邮件。POP3也使用C/S的工作方式，在传输层使用TCP，端口号为110</p>
+                            <p>POP3有两种工作方式：</p>
+                            <ul>
+                                <li>下载并保留(服务器)：用户从邮件服务器上读取邮件后，邮件依然会保留在邮件服务器上，用户可再次从服务器读取该邮件</li>
+                                <li>下载并删除：邮件一旦被读取，就从邮件服务器上删除</li>
+                            </ul>
+                            <h4>
+                                <a name="t21"></a>
+                                <a id="154IMAP_269"></a>1.5.4、网际报文存取协议IMAP</h4>
+                            <p>当用户电脑上的IMAP客户程序打开IMAP服务器的邮箱时，用户可以看到邮箱的首部，若用户需要打开某个邮件，该邮件才上传到用户的计算机上。</p>
+                            <p>IMAP可以让用户在不同的地方使用不同的计算机随时上网阅读处理邮件，还允许只读取邮件中的某一部分（先看正文，有WiFi的时候再下载附件）</p>
+                            <h4>
+                                <a name="t22"></a>
+                                <a id="155_277"></a>1.5.5、基于万维网的电子邮件</h4>
+                            <p><img src="https://img-blog.csdnimg.cn/77aee903ce6a4ca78006cc3951edd451.png#pic_center" alt="在这里插入图片描述"></p>
+                            <p>用户浏览器与新浪邮件服务器和网易邮件服务器发送或接收使用的是HTTP而仅在不同邮件服务器之间的传送邮件时才使用SMTP</p>
+                            <h3>
+                                <a name="t23"></a>
+                                <a id="16HTTP_286"></a>1.6、万维网和HTTP协议</h3>
+                            <p>万维网WWW是一个大规模的、联机式的信息存储空间。是无数个网络站点和网页的集合。</p>
+                            <p>万维网的内核部分是由三个标准构成的：</p>
+                            <ol>
+                                <li><strong>统一资源定位符URL</strong>。负责标识万维网上的各种文档，并使每个文档在整个万维网的范围内具有唯一的标识符URL。（URL不区分大小写）
+                                    <ul>
+                                        <li><mark>&lt;协议&gt;://&lt;主机&gt;:&lt;端口&gt;/&lt;路径&gt;</mark></li>
+                                        <li>https://www.qindalin.com，点击这个超链接获取资源，这些资源通过超文本传输协议HTTP传送给使用者</li>
+                                    </ul>
+                                </li>
+                                <li><strong>超文本传输协议HTTP</strong>：一个应用层协议，它使用TCP连接进行可靠的传输，HTTP是万维网客户程序和服务器程序之间交互所必须严格遵守的协议。</li>
+                                <li><strong>超文本标记语言HTML</strong>：一种文档结构的标记语言，它使用一些约定的标记，对页面上的各种信息(包括文字，声音，图像，视频等)格式进行描述</li>
+                            </ol>
+                            <blockquote>
+                                <h4>
+                                    <a name="t1"></a>
+                                    <a id="URI__URL_URN_6"></a>URI / URL /URN</h4>
+                                <p>URI(Uniform Resource ldentifier/统一资源标志符)<br> URL(Uniform Resource Locator /统一资源定位符 )<br> URN(Uniform Resource Name /统一资源名称)</p>
+                                <p>万维网以客户/服务器方式工作，用户使用的浏览器就是万维网客户程序，万维网文档所驻留的主机运行服务器程序。万维网使用超文本标记语言HTML，使得万维网页面设计者可以很方便的从一个界面的链接转到另一个界面，并能够在自己的屏幕上显示出来</p>
+                            </blockquote>
+                            <h4>
+                                <a name="t24"></a>
+                                <a id="161HTTP_304"></a>1.6.1、超文本传输协议HTTP</h4>
+                            <p><img src="https://img-blog.csdnimg.cn/9d926b8324094302add4b00d43f8820b.png#pic_center" alt="在这里插入图片描述"></p>
+                            <p>HTTP协议定义了浏览器怎样向万维网服务器请求，万维网文档以及服务器怎样把文档传送给浏览器。</p>
+                            <p>用户点击https://www.qindalin.com 所发生的事件按顺序如下：</p>
+                            <ol>
+                                <li>浏览器分析链接指向页面的URL</li>
+                                <li>浏览器向DNS请求解析https://www.qindalin.com的IP地址</li>
+                                <li>域名系统DNS解析出此链接服务器的IP地址</li>
+                                <li>浏览器与该服务器建立TCP连接（默认端口号为80）</li>
+                                <li>浏览器发出HTTP请求：get请求或post请求以及其他请求</li>
+                                <li>服务器通过HTTP响应响应浏览器</li>
+                                <li>释放TCP连接</li>
+                                <li>浏览器显示web页面</li>
+                            </ol>
+                            <blockquote>
+                                <p><strong>什么是客户端和服务端？</strong> 客户端：可以向服务器发请求，并接收返回的内容进行处理 服务器端：能够接收客户端请求，并且把相关资源信息返回给客户端的</p>
+                                <p><strong>当用户在地址栏中输入网址，到最后看到页面，中间都经历了什么？</strong> <img src="https://img-blog.csdnimg.cn/a563d4a44ce84f3aadc44133cc6cbe5e.png" alt="在这里插入图片描述"><br> 后面会详细解析每个步骤干的事</p>
+                            </blockquote>
+                            <h4>
+                                <a name="t25"></a>
+                                <a id="162HTTP_326"></a>1.6.2、HTTP协议的特点</h4>
+                            <ol>
+                                <li>HTTP协议是无状态的。也就是说，同一个客户第2次访问同一个服务器上的页面是服务器的响应与第1次被访问时的相同，因为服务器并不记得曾经访问过这个客户，也不记得为该客户曾经服务过多少次。</li>
+                                <li>但是在实际工作中，一些万维网站点常常希望能够被用户识别，这个时候就需要一个东西叫做cookie。cookie是存储在用户主机中的文本文件(就是在磁盘中)，记录一段时间内某用户的访问记录。</li>
+                                <li>HTTP采用TCP作为运输层协议，但<strong>HTTP协议本身是无连接的</strong>（通信双方在交换HTTP报文之前，不需要先建立HTTP连接）</li>
+                                <li>HTTP有两种连接方式</li>
+                            </ol>
+                            <ul>
+                                <li>持久连接：万维网服务器在发送响应后，仍然保持这条连接，使同一个浏览器和该服务器可以继续在这条连接上传送后续的HTTP请求和响应报文
+                                    <ul>
+                                        <li>非流水线：客户在收到前一个响应后才能发出下一个请求，服务器发送完一个对象后，其TCP连接就处于空闲状态，浪费了服务器资源。</li>
+                                        <li>流水线：客户每遇到一个对象，引用就立即发出一个请求，因而客户可以逐个的连续发出对各个引用对象的请求。HTTP/1.1的默认方式是使用流水线的持久连接</li>
+                                    </ul>
+                                </li>
+                                <li>非持久连接：对于每个网页元素对象(图像、文字)的传输，都需要单独建立一个TCP请求</li>
+                            </ul>
+                            <h4>
+                                <a name="t26"></a>
+                                <a id="163HTTP_341"></a>1.6.3、HTTP协议的连接方式</h4>
+                            <p><img src="https://img-blog.csdnimg.cn/5532c46cd2064d67b03ce9d1f5b66450.png#pic_center" alt="在这里插入图片描述"></p>
+                            <p>如上左图：发起TCP连接需要进行三次握手，三次握手的前两部分经过之后，也就是经过了一个RTT事件，第3次握手的报文段中捎带了客户对万维网文档的请求，万维网服务器返回一个HTTP响应报文，这个报文是有长度的，需要经过一定的时间才能将整个文档收到完整的报文。所以非持久时间 = 2RTT+该文档的传输时间。</p>
+                            <p>如上右图：发起TCP连接仍然需要三次握手，但是如果再发起请求新的图片元素或者发起新的报文，就不需要再建立TCP连接，在之前建立好的连接基础上继续发送。</p>
+                            <h4>
+                                <a name="t27"></a>
+                                <a id="164HTTP_356"></a>1.6.4、HTTP的报文结构</h4>
+                            <p>HTTP的报文，包括响应报文和请求报文， HTTP报文是面向文本的，因此在报文中的每一个字段都是一些ASCII码串。</p>
+                            <p><img src="https://img-blog.csdnimg.cn/5743d537c4e945aabb4cd70ba9524632.png#pic_center" alt="在这里插入图片描述"></p>
+                            <p>请求报文：请求行、首部行、实体主体</p>
+                            <p>响应报文：状态行、首部行、实体主体</p>
+                            <ul>
+                                <li>请求报文和响应报文的第一行都可以叫做开始行。<strong>开始行用于区分是请求报文还是响应报文</strong>，在请求报文的开始行称为<strong>请求行</strong>，在响应报文的开始行称为<strong>状态行</strong></li>
+                                <li>请求报文的请求行有三个内容：方法、请求资源的URL、HTTP的版本</li>
+                                <li>首部行：用来说明浏览器、服务器和报文主体的一些信息，首部行都有首部字段名，每一行都有回车换行，结束也有回车换行</li>
+                            </ul>
+                            <p><img src="https://img-blog.csdnimg.cn/b7331583c88d42d8beab48393703766d.png#pic_center" alt="在这里插入图片描述"></p>
+                        </div>
+                        <div data-report-view="{&quot;mod&quot;:&quot;1585297308_001&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6548&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/Augenstern_QXL/article/details/126216485&quot;,&quot;extend1&quot;:&quot;pc&quot;,&quot;ab&quot;:&quot;new&quot;}">
+                            <div></div>
+                        </div>
+                        <link href="https://csdnimg.cn/release/blogv2/dist/mdeditor/css/editerView/markdown_views-98b95bb57c.css" rel="stylesheet">
+                        <link href="https://csdnimg.cn/release/blogv2/dist/mdeditor/css/style-c216769e99.css" rel="stylesheet">
+                    </div>
+                    <ol start="2">
+                        <li>HTTP状态码<br> 1~5开头，三位数字</li>
+                    </ol>
+                    <ul>
+                        <li>200 OK：成功</li>
+                        <li>201 CREATED：一般应用于告诉服务器创建一个新文件，最后服务器创建成功后返回的状态码</li>
+                        <li>204 NO CONTENT：对于某些请求（例如：PUT或者DELETE），服务器不想处理，可以返回空内容，并且用204状态码告知</li>
+                        <li>301 Moved Permanently：永久重定向（永久转移）</li>
+                        <li>302 Moved Temporarily：临时转移，很早以前基本上用302来做，但是现在主要用307来处理这个事情，307的意思就是临时重定向Temporary<br> Redirect =&gt;主要用于：服务器的负载均衡等</li>
+                        <li>304 Not Modified：设置HTTP的协商缓存</li>
+                        <li>400 Bad Request：传递给服务器的参数错误</li>
+                        <li>401 Unauthorized：无权限访问</li>
+                        <li>404 Not Found：请求地址错误</li>
+                        <li>500 Internal Server Error：未知服务器错误</li>
+                        <li>503 Service Unavailable：服务器超负荷<br> <img src="https://img-blog.csdnimg.cn/34d14b1b5279468f9f29fc7cb64b26a2.png" alt="在这里插入图片描述"></li>
+                    </ul>
+                    <div id="treeSkill" data-report-view="{&quot;spm&quot;:&quot;1001.2101.3001.6866&quot;}" style="display: block;">
+                        <div class="skill-tree-box">
+                            <div class="skill-tree-head">文章知识点与官方知识档案匹配，可进一步学习相关知识</div>
+                            <div class="skill-tree-body">
+                                <div class="skill-tree-item"><span class="skill-tree-href"><a data-report-click="{&quot;spm&quot;:&quot;1001.2101.3001.6866&quot;,&quot;dest&quot;:&quot;https://edu.csdn.net/skill/network/network-16b1ac6767d947f4b9cf1be248239823?utm_source=csdn_ai_skill_tree_blog&quot;}" href="https://edu.csdn.net/skill/network/network-16b1ac6767d947f4b9cf1be248239823?utm_source=csdn_ai_skill_tree_blog" target="_blank">网络技能树</a><i></i><a data-report-click="{&quot;spm&quot;:&quot;1001.2101.3001.6866&quot;,&quot;dest&quot;:&quot;https://edu.csdn.net/skill/network/network-16b1ac6767d947f4b9cf1be248239823?utm_source=csdn_ai_skill_tree_blog&quot;}" href="https://edu.csdn.net/skill/network/network-16b1ac6767d947f4b9cf1be248239823?utm_source=csdn_ai_skill_tree_blog" target="_blank">认识身边的计算机网络</a><i></i><a data-report-click="{&quot;spm&quot;:&quot;1001.2101.3001.6866&quot;,&quot;dest&quot;:&quot;https://edu.csdn.net/skill/network/network-16b1ac6767d947f4b9cf1be248239823?utm_source=csdn_ai_skill_tree_blog&quot;}" href="https://edu.csdn.net/skill/network/network-16b1ac6767d947f4b9cf1be248239823?utm_source=csdn_ai_skill_tree_blog" target="_blank">常见的网络设备</a></span>
+                                    <span class="skill-tree-con"><span class="skill-tree-count">40596</span> 人正在系统学习中</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <script>
+                    $(function() {
+                        setTimeout(function() {
+                            var mathcodeList = document.querySelectorAll('.htmledit_views img.mathcode');
+                            if (mathcodeList.length > 0) {
+                                for (let i = 0; i < mathcodeList.length; i++) {
+                                    if (mathcodeList[i].naturalWidth === 0 || mathcodeList[i].naturalHeight === 0) {
+                                        var alt = mathcodeList[i].alt;
+                                        alt = '\\(' + alt + '\\)';
+                                        var curSpan = $('<span class="img-codecogs"></span>');
+                                        curSpan.text(alt);
+                                        $(mathcodeList[i]).before(curSpan);
+                                        $(mathcodeList[i]).remove();
+                                    }
+                                }
+                                MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+                            }
+                        }, 1000)
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+    <script>
+    </script>
+
+
+</body>
+
+</html>
